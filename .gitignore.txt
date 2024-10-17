@@ -1,0 +1,23 @@
+# Ignore Visual Studio temporary files, solution-specific files
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Ignore build output directories in both main project and unit test project
+TDSSWebApplication/bin/
+TDSSWebApplication/obj/
+UnitTestProject/bin/
+UnitTestProject/obj/
+
+# Ignore DLL and executable files
+*.dll
+*.exe
+*.pdb
+
+# Ignore temporary files
+*.log
+*.tmp
+
+# Ignore NuGet packages
+packages/
