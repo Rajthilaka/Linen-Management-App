@@ -1,0 +1,1566 @@
+2024-10-18 10:27:01.642 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-18 10:27:02.115 +05:30 [INF] Starting up the API
+2024-10-18 10:27:02.123 +05:30 [DBG] Hosting starting
+2024-10-18 10:27:02.355 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-18 10:27:02.379 +05:30 [DBG] Reading data from file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-4301ba9f-5f84-4d67-92a7-6b9554c69286.xml'.
+2024-10-18 10:27:02.432 +05:30 [DBG] Found key {4301ba9f-5f84-4d67-92a7-6b9554c69286}.
+2024-10-18 10:27:02.468 +05:30 [DBG] Considering key {4301ba9f-5f84-4d67-92a7-6b9554c69286} with expiration date 2025-01-12 06:00:35Z as default key.
+2024-10-18 10:27:02.476 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-18 10:27:02.480 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-10-18 10:27:02.484 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-18 10:27:02.496 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-18 10:27:02.500 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-18 10:27:02.506 +05:30 [DBG] Using key {4301ba9f-5f84-4d67-92a7-6b9554c69286} as the default key.
+2024-10-18 10:27:02.508 +05:30 [DBG] Key ring with default key {4301ba9f-5f84-4d67-92a7-6b9554c69286} was loaded during application startup.
+2024-10-18 10:27:03.660 +05:30 [INF] Now listening on: https://localhost:7098
+2024-10-18 10:27:03.660 +05:30 [INF] Now listening on: http://localhost:5071
+2024-10-18 10:27:03.660 +05:30 [DBG] Loaded hosting startup assembly TDSSWebApplication
+2024-10-18 10:27:03.661 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-10-18 10:27:03.661 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-18 10:27:03.661 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-10-18 10:27:03.829 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-18 10:27:03.829 +05:30 [INF] Hosting environment: Development
+2024-10-18 10:27:03.829 +05:30 [INF] Content root path: C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication
+2024-10-18 10:27:03.830 +05:30 [DBG] Hosting started
+2024-10-18 10:27:03.869 +05:30 [DBG] Connection id "0HN7F657H10N9" received FIN.
+2024-10-18 10:27:03.880 +05:30 [DBG] Connection id "0HN7F657H10N9" accepted.
+2024-10-18 10:27:03.883 +05:30 [DBG] Connection id "0HN7F657H10N9" started.
+2024-10-18 10:27:03.939 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-18 10:27:04.478 +05:30 [DBG] Connection id "0HN7F657H10N9" stopped.
+2024-10-18 10:27:04.491 +05:30 [DBG] Connection id "0HN7F657H10N9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 10:27:08.711 +05:30 [DBG] Connection id "0HN7F657H10NA" accepted.
+2024-10-18 10:27:08.781 +05:30 [DBG] Connection id "0HN7F657H10NA" started.
+2024-10-18 10:27:09.276 +05:30 [DBG] Connection 0HN7F657H10NA established using the following protocol: "Tls12"
+2024-10-18 10:27:09.971 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/index.html - null null
+2024-10-18 10:27:10.980 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-18 10:27:11.189 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-10-18 10:27:11.192 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-18 10:27:11.334 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-10-18 10:27:11.335 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-18 10:27:11.340 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/index.html - 200 null text/html;charset=utf-8 1383.5803ms
+2024-10-18 10:27:12.378 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-18 10:27:12.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 177.2148ms
+2024-10-18 10:27:12.557 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_vs/browserLink - null null
+2024-10-18 10:27:12.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_vs/browserLink - 200 null text/javascript; charset=UTF-8 423.8454ms
+2024-10-18 10:27:13.221 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - null null
+2024-10-18 10:27:13.660 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 439.5126ms
+2024-10-18 10:27:17.066 +05:30 [DBG] Connection id "0HN7F657H10NA" received FIN.
+2024-10-18 10:27:17.074 +05:30 [DBG] The connection queue processing loop for 0HN7F657H10NA completed.
+2024-10-18 10:27:17.080 +05:30 [DBG] Connection id "0HN7F657H10NA" is closed. The last processed stream ID was 7.
+2024-10-18 10:27:17.080 +05:30 [DBG] Connection id "0HN7F657H10NA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 10:27:17.095 +05:30 [DBG] Connection id "0HN7F657H10NA" stopped.
+2024-10-18 10:31:43.494 +05:30 [DBG] Connection id "0HN7F657H10NB" accepted.
+2024-10-18 10:31:43.509 +05:30 [DBG] Connection id "0HN7F657H10NB" started.
+2024-10-18 10:31:43.590 +05:30 [DBG] Connection 0HN7F657H10NB established using the following protocol: "Tls12"
+2024-10-18 10:31:43.687 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7098/api/Employees/SetPassword?employeeId=5&password=test - null 0
+2024-10-18 10:31:43.734 +05:30 [DBG] POST requests are not supported
+2024-10-18 10:31:43.940 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Employees/SetPassword'
+2024-10-18 10:31:43.947 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.EmployeesController.SetPassword (TDSSWebApplication)' with route pattern 'api/Employees/SetPassword' is valid for the request path '/api/Employees/SetPassword'
+2024-10-18 10:31:43.952 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.EmployeesController.SetPassword (TDSSWebApplication)'
+2024-10-18 10:31:44.252 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-18 10:31:44.274 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.EmployeesController.SetPassword (TDSSWebApplication)'
+2024-10-18 10:31:44.386 +05:30 [INF] Route matched with {action = "SetPassword", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SetPassword(Int32, System.String) on controller TDSSWebApplication.Controllers.EmployeesController (TDSSWebApplication).
+2024-10-18 10:31:44.389 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 10:31:44.390 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 10:31:44.392 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 10:31:44.392 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 10:31:44.393 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 10:31:44.397 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.EmployeesController (TDSSWebApplication)
+2024-10-18 10:31:44.803 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-18 10:31:44.917 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.EmployeesController (TDSSWebApplication)
+2024-10-18 10:31:45.048 +05:30 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int32' ...
+2024-10-18 10:31:45.054 +05:30 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int32' using the name 'employeeId' in request data ...
+2024-10-18 10:31:45.057 +05:30 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int32'.
+2024-10-18 10:31:45.058 +05:30 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int32'.
+2024-10-18 10:31:45.058 +05:30 [DBG] Attempting to validate the bound parameter 'employeeId' of type 'System.Int32' ...
+2024-10-18 10:31:45.068 +05:30 [DBG] Done attempting to validate the bound parameter 'employeeId' of type 'System.Int32'.
+2024-10-18 10:31:45.072 +05:30 [DBG] Attempting to bind parameter 'password' of type 'System.String' ...
+2024-10-18 10:31:45.072 +05:30 [DBG] Attempting to bind parameter 'password' of type 'System.String' using the name 'password' in request data ...
+2024-10-18 10:31:45.072 +05:30 [DBG] Done attempting to bind parameter 'password' of type 'System.String'.
+2024-10-18 10:31:45.072 +05:30 [DBG] Done attempting to bind parameter 'password' of type 'System.String'.
+2024-10-18 10:31:45.073 +05:30 [DBG] Attempting to validate the bound parameter 'password' of type 'System.String' ...
+2024-10-18 10:31:45.090 +05:30 [DBG] Done attempting to validate the bound parameter 'password' of type 'System.String'.
+2024-10-18 10:31:51.777 +05:30 [INF] Trace: Generate and Set Password with ID 5
+2024-10-18 10:31:54.152 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 10:31:54.395 +05:30 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .FirstOrDefault(e => EF.Property<int>(e, "EmployeeId") == __p_0)'
+2024-10-18 10:31:54.906 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: new SingleQueryingEnumerable<Employee>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Email (string) Required MaxLength(100), 1], [Property: Employee.Name (string) Required MaxLength(50), 2], [Property: Employee.Password (string) Required, 3], [Property: Employee.RefreshToken (string), 4] }
+            SELECT TOP(1) e.EmployeeId, e.Email, e.Name, e.Password, e.RefreshToken
+            FROM Employees AS e
+            WHERE e.EmployeeId == @__p_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+        TDSSWebApplication.Models.LinenManagementContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-18 10:31:54.986 +05:30 [DBG] Creating DbConnection.
+2024-10-18 10:31:55.098 +05:30 [DBG] Created DbConnection. (107ms).
+2024-10-18 10:31:55.107 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:31:55.997 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:31:56.005 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 10:31:56.015 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (10ms).
+2024-10-18 10:31:56.036 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (33ms).
+2024-10-18 10:31:56.058 +05:30 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[EmployeeId] = @__p_0
+2024-10-18 10:31:56.308 +05:30 [INF] Executed DbCommand (245ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[EmployeeId] = @__p_0
+2024-10-18 10:31:56.442 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 10:31:56.494 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:31:56.514 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 195ms reading results.
+2024-10-18 10:31:56.522 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:31:56.534 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (11ms).
+2024-10-18 10:31:58.037 +05:30 [DBG] An entity of type 'Employee' tracked by 'LinenManagementContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 10:31:58.045 +05:30 [DBG] SaveChanges starting for 'LinenManagementContext'.
+2024-10-18 10:31:58.053 +05:30 [DBG] DetectChanges starting for 'LinenManagementContext'.
+2024-10-18 10:31:58.084 +05:30 [DBG] DetectChanges completed for 'LinenManagementContext'.
+2024-10-18 10:31:58.327 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:31:58.333 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:31:58.348 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 10:31:58.349 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 10:31:58.351 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2024-10-18 10:31:58.351 +05:30 [DBG] Executing DbCommand [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 100), @p1='?' (Size = 50), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [Email] = @p0, [Name] = @p1, [Password] = @p2, [RefreshToken] = @p3
+OUTPUT 1
+WHERE [EmployeeId] = @p4;
+2024-10-18 10:31:58.432 +05:30 [INF] Executed DbCommand (80ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 100), @p1='?' (Size = 50), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [Email] = @p0, [Name] = @p1, [Password] = @p2, [RefreshToken] = @p3
+OUTPUT 1
+WHERE [EmployeeId] = @p4;
+2024-10-18 10:31:58.458 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:31:58.459 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 26ms reading results.
+2024-10-18 10:31:58.462 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:31:58.462 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 10:31:58.468 +05:30 [DBG] An entity of type 'Employee' tracked by 'LinenManagementContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 10:31:58.477 +05:30 [DBG] SaveChanges completed for 'LinenManagementContext' with 1 entities written to the database.
+2024-10-18 10:31:58.477 +05:30 [INF] Trace: Successfully Set Password
+2024-10-18 10:31:58.479 +05:30 [INF] Successfully Set the Password
+2024-10-18 10:31:58.490 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-18 10:31:58.499 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-18 10:31:58.499 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-18 10:31:58.499 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-18 10:31:58.502 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-10-18 10:31:58.502 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-10-18 10:31:58.520 +05:30 [INF] Executed action TDSSWebApplication.Controllers.EmployeesController.SetPassword (TDSSWebApplication) in 14120.0388ms
+2024-10-18 10:31:58.523 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.EmployeesController.SetPassword (TDSSWebApplication)'
+2024-10-18 10:31:58.535 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 10:31:58.560 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:31:58.563 +05:30 [DBG] Disposed connection to database '' on server '' (15ms).
+2024-10-18 10:31:58.564 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7098/api/Employees/SetPassword?employeeId=5&password=test - 200 null text/plain; charset=utf-8 14883.3553ms
+2024-10-18 10:32:03.136 +05:30 [DBG] Connection id "0HN7F657H10NB" received FIN.
+2024-10-18 10:32:03.137 +05:30 [DBG] Connection id "0HN7F657H10NB" is closed. The last processed stream ID was 1.
+2024-10-18 10:32:03.137 +05:30 [DBG] Connection id "0HN7F657H10NB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 10:32:03.138 +05:30 [DBG] The connection queue processing loop for 0HN7F657H10NB completed.
+2024-10-18 10:32:03.139 +05:30 [DBG] Connection id "0HN7F657H10NB" stopped.
+2024-10-18 10:33:01.165 +05:30 [DBG] Connection id "0HN7F657H10NC" accepted.
+2024-10-18 10:33:01.169 +05:30 [DBG] Connection id "0HN7F657H10NC" started.
+2024-10-18 10:33:01.189 +05:30 [DBG] Connection 0HN7F657H10NC established using the following protocol: "Tls12"
+2024-10-18 10:33:01.225 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/index.html - null null
+2024-10-18 10:33:01.305 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-10-18 10:33:01.305 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-18 10:33:01.308 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-10-18 10:33:01.308 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-18 10:33:01.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/index.html - 200 null text/html;charset=utf-8 83.8542ms
+2024-10-18 10:33:01.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-18 10:33:01.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 21.6128ms
+2024-10-18 10:33:01.408 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_vs/browserLink - null null
+2024-10-18 10:33:01.516 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_vs/browserLink - 200 null text/javascript; charset=UTF-8 129.3749ms
+2024-10-18 10:33:01.820 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - null null
+2024-10-18 10:33:01.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.0259ms
+2024-10-18 10:33:03.225 +05:30 [DBG] Connection id "0HN7F657H10NC" received FIN.
+2024-10-18 10:33:03.225 +05:30 [DBG] Connection id "0HN7F657H10NC" is closed. The last processed stream ID was 7.
+2024-10-18 10:33:03.226 +05:30 [DBG] Connection id "0HN7F657H10NC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 10:33:03.226 +05:30 [DBG] The connection queue processing loop for 0HN7F657H10NC completed.
+2024-10-18 10:33:03.226 +05:30 [DBG] Connection id "0HN7F657H10NC" stopped.
+2024-10-18 10:34:02.104 +05:30 [DBG] Connection id "0HN7F657H10ND" accepted.
+2024-10-18 10:34:02.187 +05:30 [DBG] Connection id "0HN7F657H10ND" started.
+2024-10-18 10:34:02.368 +05:30 [DBG] Connection 0HN7F657H10ND established using the following protocol: "Tls12"
+2024-10-18 10:34:02.435 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7098/api/Auth/login - application/json 41
+2024-10-18 10:34:02.435 +05:30 [DBG] POST requests are not supported
+2024-10-18 10:34:02.472 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2024-10-18 10:34:02.473 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2024-10-18 10:34:02.473 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication)'
+2024-10-18 10:34:02.475 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-18 10:34:02.476 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication)'
+2024-10-18 10:34:02.501 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TDSSWebApplication.DTO.LoginDto) on controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication).
+2024-10-18 10:34:02.501 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 10:34:02.502 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 10:34:02.502 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 10:34:02.502 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 10:34:02.502 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 10:34:02.502 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication)
+2024-10-18 10:34:09.247 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication)
+2024-10-18 10:34:09.250 +05:30 [DBG] Attempting to bind parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto' ...
+2024-10-18 10:34:09.252 +05:30 [DBG] Attempting to bind parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto' using the name '' in request data ...
+2024-10-18 10:34:09.258 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-10-18 10:34:09.308 +05:30 [DBG] Connection id "0HN7F657H10ND", Request id "0HN7F657H10ND:00000001": started reading request body.
+2024-10-18 10:34:09.309 +05:30 [DBG] Connection id "0HN7F657H10ND", Request id "0HN7F657H10ND:00000001": done reading request body.
+2024-10-18 10:34:09.359 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'TDSSWebApplication.DTO.LoginDto'
+2024-10-18 10:34:09.361 +05:30 [DBG] Done attempting to bind parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto'.
+2024-10-18 10:34:09.361 +05:30 [DBG] Done attempting to bind parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto'.
+2024-10-18 10:34:09.361 +05:30 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto' ...
+2024-10-18 10:34:09.385 +05:30 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto'.
+2024-10-18 10:34:18.048 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 10:34:18.051 +05:30 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .SingleOrDefault(u => u.Name == __name_0)'
+2024-10-18 10:34:18.083 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: new SingleQueryingEnumerable<Employee>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Email (string) Required MaxLength(100), 1], [Property: Employee.Name (string) Required MaxLength(50), 2], [Property: Employee.Password (string) Required, 3], [Property: Employee.RefreshToken (string), 4] }
+            SELECT TOP(2) e.EmployeeId, e.Email, e.Name, e.Password, e.RefreshToken
+            FROM Employees AS e
+            WHERE e.Name == @__name_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+        TDSSWebApplication.Models.LinenManagementContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-18 10:34:18.085 +05:30 [DBG] Creating DbConnection.
+2024-10-18 10:34:18.085 +05:30 [DBG] Created DbConnection. (0ms).
+2024-10-18 10:34:18.086 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:34:18.086 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:34:18.086 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 10:34:18.086 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 10:34:18.086 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 10:34:18.086 +05:30 [DBG] Executing DbCommand [Parameters=[@__name_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[Name] = @__name_0
+2024-10-18 10:34:18.386 +05:30 [INF] Executed DbCommand (300ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[Name] = @__name_0
+2024-10-18 10:34:18.388 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 10:34:18.389 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:34:18.389 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 1ms reading results.
+2024-10-18 10:34:18.389 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:34:18.389 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 10:35:10.221 +05:30 [DBG] SaveChanges starting for 'LinenManagementContext'.
+2024-10-18 10:35:10.222 +05:30 [DBG] DetectChanges starting for 'LinenManagementContext'.
+2024-10-18 10:35:10.232 +05:30 [DBG] The unchanged property 'Employee.RefreshToken' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 10:35:10.233 +05:30 [DBG] An entity of type 'Employee' tracked by 'LinenManagementContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 10:35:10.234 +05:30 [DBG] DetectChanges completed for 'LinenManagementContext'.
+2024-10-18 10:35:10.236 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:35:10.237 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:35:10.237 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 10:35:10.237 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 10:35:10.237 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 10:35:10.237 +05:30 [DBG] Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [RefreshToken] = @p0
+OUTPUT 1
+WHERE [EmployeeId] = @p1;
+2024-10-18 10:35:10.304 +05:30 [INF] Executed DbCommand (67ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [RefreshToken] = @p0
+OUTPUT 1
+WHERE [EmployeeId] = @p1;
+2024-10-18 10:35:10.306 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:35:10.306 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 1ms reading results.
+2024-10-18 10:35:10.306 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:35:10.307 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 10:35:10.307 +05:30 [DBG] An entity of type 'Employee' tracked by 'LinenManagementContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 10:35:10.308 +05:30 [DBG] SaveChanges completed for 'LinenManagementContext' with 1 entities written to the database.
+2024-10-18 10:35:10.310 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-18 10:35:10.310 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-18 10:35:10.310 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-18 10:35:10.310 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-18 10:35:10.310 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-18 10:35:10.311 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-10-18 10:35:10.328 +05:30 [INF] Executed action TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication) in 67826.2078ms
+2024-10-18 10:35:10.328 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication)'
+2024-10-18 10:35:10.329 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 10:35:10.329 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 10:35:10.329 +05:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-10-18 10:35:10.329 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7098/api/Auth/login - 200 null application/json; charset=utf-8 67894.571ms
+2024-10-18 10:35:13.430 +05:30 [DBG] Connection id "0HN7F657H10ND" received FIN.
+2024-10-18 10:35:13.430 +05:30 [DBG] Connection id "0HN7F657H10ND" is closed. The last processed stream ID was 1.
+2024-10-18 10:35:13.430 +05:30 [DBG] Connection id "0HN7F657H10ND" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 10:35:13.431 +05:30 [DBG] The connection queue processing loop for 0HN7F657H10ND completed.
+2024-10-18 10:35:13.431 +05:30 [DBG] Connection id "0HN7F657H10ND" stopped.
+2024-10-18 11:04:45.673 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-18 11:04:46.208 +05:30 [INF] Starting up the API
+2024-10-18 11:04:46.216 +05:30 [DBG] Hosting starting
+2024-10-18 11:04:46.428 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-18 11:04:46.451 +05:30 [DBG] Reading data from file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-4301ba9f-5f84-4d67-92a7-6b9554c69286.xml'.
+2024-10-18 11:04:46.579 +05:30 [DBG] Found key {4301ba9f-5f84-4d67-92a7-6b9554c69286}.
+2024-10-18 11:04:46.610 +05:30 [DBG] Considering key {4301ba9f-5f84-4d67-92a7-6b9554c69286} with expiration date 2025-01-12 06:00:35Z as default key.
+2024-10-18 11:04:46.616 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-18 11:04:46.621 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-10-18 11:04:46.624 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-18 11:04:46.643 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-18 11:04:46.647 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-18 11:04:46.656 +05:30 [DBG] Using key {4301ba9f-5f84-4d67-92a7-6b9554c69286} as the default key.
+2024-10-18 11:04:46.660 +05:30 [DBG] Key ring with default key {4301ba9f-5f84-4d67-92a7-6b9554c69286} was loaded during application startup.
+2024-10-18 11:04:48.324 +05:30 [INF] Now listening on: https://localhost:7098
+2024-10-18 11:04:48.324 +05:30 [INF] Now listening on: http://localhost:5071
+2024-10-18 11:04:48.325 +05:30 [DBG] Loaded hosting startup assembly TDSSWebApplication
+2024-10-18 11:04:48.325 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-10-18 11:04:48.325 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-18 11:04:48.325 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-10-18 11:04:48.529 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-18 11:04:48.529 +05:30 [INF] Hosting environment: Development
+2024-10-18 11:04:48.529 +05:30 [INF] Content root path: C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication
+2024-10-18 11:04:48.529 +05:30 [DBG] Hosting started
+2024-10-18 11:04:48.808 +05:30 [DBG] Connection id "0HN7F6QAH5JF5" accepted.
+2024-10-18 11:04:48.817 +05:30 [DBG] Connection id "0HN7F6QAH5JF5" started.
+2024-10-18 11:04:48.862 +05:30 [DBG] Connection id "0HN7F6QAH5JF5" received FIN.
+2024-10-18 11:04:48.924 +05:30 [DBG] Connection id "0HN7F6QAH5JF6" received FIN.
+2024-10-18 11:04:48.925 +05:30 [DBG] Connection id "0HN7F6QAH5JF6" accepted.
+2024-10-18 11:04:48.926 +05:30 [DBG] Connection id "0HN7F6QAH5JF6" started.
+2024-10-18 11:04:49.012 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-18 11:04:49.053 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-18 11:04:49.169 +05:30 [DBG] Connection id "0HN7F6QAH5JF6" stopped.
+2024-10-18 11:04:49.169 +05:30 [DBG] Connection id "0HN7F6QAH5JF5" stopped.
+2024-10-18 11:04:49.174 +05:30 [DBG] Connection id "0HN7F6QAH5JF6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:04:49.176 +05:30 [DBG] Connection id "0HN7F6QAH5JF5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:04:56.441 +05:30 [DBG] Connection id "0HN7F6QAH5JF7" accepted.
+2024-10-18 11:04:56.554 +05:30 [DBG] Connection id "0HN7F6QAH5JF7" started.
+2024-10-18 11:04:57.738 +05:30 [DBG] Connection 0HN7F6QAH5JF7 established using the following protocol: "Tls12"
+2024-10-18 11:04:58.049 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/index.html - null null
+2024-10-18 11:04:58.437 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-18 11:04:58.684 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-10-18 11:04:58.687 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-18 11:04:58.779 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-10-18 11:04:58.780 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-18 11:04:58.786 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/index.html - 200 null text/html;charset=utf-8 756.1075ms
+2024-10-18 11:05:02.627 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-18 11:05:02.639 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_vs/browserLink - null null
+2024-10-18 11:05:02.655 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 28.2824ms
+2024-10-18 11:05:02.915 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_vs/browserLink - 200 null text/javascript; charset=UTF-8 276.3324ms
+2024-10-18 11:05:03.488 +05:30 [DBG] Connection id "0HN7F6QAH5JF7" received FIN.
+2024-10-18 11:05:03.537 +05:30 [DBG] Connection id "0HN7F6QAH5JF7" is closed. The last processed stream ID was 5.
+2024-10-18 11:05:03.537 +05:30 [DBG] Connection id "0HN7F6QAH5JF7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:05:03.606 +05:30 [DBG] Connection id "0HN7F6QAH5JF8" accepted.
+2024-10-18 11:05:03.624 +05:30 [DBG] Connection id "0HN7F6QAH5JF8" started.
+2024-10-18 11:05:04.032 +05:30 [DBG] The connection queue processing loop for 0HN7F6QAH5JF7 completed.
+2024-10-18 11:05:04.097 +05:30 [DBG] Connection id "0HN7F6QAH5JF7" stopped.
+2024-10-18 11:05:04.104 +05:30 [DBG] Connection 0HN7F6QAH5JF8 established using the following protocol: "Tls12"
+2024-10-18 11:05:04.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - null null
+2024-10-18 11:05:06.106 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1999.3807ms
+2024-10-18 11:05:08.229 +05:30 [DBG] Connection id "0HN7F6QAH5JF8" received FIN.
+2024-10-18 11:05:08.230 +05:30 [DBG] Connection id "0HN7F6QAH5JF8" is closed. The last processed stream ID was 1.
+2024-10-18 11:05:08.230 +05:30 [DBG] The connection queue processing loop for 0HN7F6QAH5JF8 completed.
+2024-10-18 11:05:08.230 +05:30 [DBG] Connection id "0HN7F6QAH5JF8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:05:08.231 +05:30 [DBG] Connection id "0HN7F6QAH5JF8" stopped.
+2024-10-18 11:05:36.551 +05:30 [DBG] Connection id "0HN7F6QAH5JF9" accepted.
+2024-10-18 11:05:36.554 +05:30 [DBG] Connection id "0HN7F6QAH5JF9" started.
+2024-10-18 11:05:36.606 +05:30 [DBG] Connection 0HN7F6QAH5JF9 established using the following protocol: "Tls12"
+2024-10-18 11:05:36.608 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7098/api/Auth/refresh - application/json 112
+2024-10-18 11:05:36.612 +05:30 [DBG] POST requests are not supported
+2024-10-18 11:05:36.670 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Auth/refresh'
+2024-10-18 11:05:36.676 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication)' with route pattern 'api/Auth/refresh' is valid for the request path '/api/Auth/refresh'
+2024-10-18 11:05:36.677 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication)'
+2024-10-18 11:05:36.846 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-18 11:05:36.850 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication)'
+2024-10-18 11:05:36.910 +05:30 [INF] Route matched with {action = "Refresh", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refresh(TDSSWebApplication.DTO.TokenRefreshDto) on controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication).
+2024-10-18 11:05:36.912 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 11:05:36.912 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 11:05:36.914 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 11:05:36.914 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 11:05:36.914 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 11:05:36.917 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication)
+2024-10-18 11:05:37.268 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-18 11:05:40.672 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication)
+2024-10-18 11:05:40.711 +05:30 [DBG] Attempting to bind parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto' ...
+2024-10-18 11:05:40.719 +05:30 [DBG] Attempting to bind parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto' using the name '' in request data ...
+2024-10-18 11:05:40.725 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-10-18 11:05:40.749 +05:30 [DBG] Connection id "0HN7F6QAH5JF9", Request id "0HN7F6QAH5JF9:00000001": started reading request body.
+2024-10-18 11:05:40.749 +05:30 [DBG] Connection id "0HN7F6QAH5JF9", Request id "0HN7F6QAH5JF9:00000001": done reading request body.
+2024-10-18 11:05:40.758 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'TDSSWebApplication.DTO.TokenRefreshDto'
+2024-10-18 11:05:40.765 +05:30 [DBG] Done attempting to bind parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto'.
+2024-10-18 11:05:40.766 +05:30 [DBG] Done attempting to bind parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto'.
+2024-10-18 11:05:40.766 +05:30 [DBG] Attempting to validate the bound parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto' ...
+2024-10-18 11:05:40.794 +05:30 [DBG] Done attempting to validate the bound parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto'.
+2024-10-18 11:05:40.803 +05:30 [INF] Jwt Athentication TokenRefreh
+2024-10-18 11:05:43.970 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 11:05:44.208 +05:30 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .FirstOrDefault(e => e.RefreshToken == __refreshToken_0)'
+2024-10-18 11:05:44.905 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: new SingleQueryingEnumerable<Employee>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Email (string) Required MaxLength(100), 1], [Property: Employee.Name (string) Required MaxLength(50), 2], [Property: Employee.Password (string) Required, 3], [Property: Employee.RefreshToken (string), 4] }
+            SELECT TOP(1) e.EmployeeId, e.Email, e.Name, e.Password, e.RefreshToken
+            FROM Employees AS e
+            WHERE e.RefreshToken == @__refreshToken_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+        TDSSWebApplication.Models.LinenManagementContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-18 11:05:45.027 +05:30 [DBG] Creating DbConnection.
+2024-10-18 11:05:45.094 +05:30 [DBG] Created DbConnection. (62ms).
+2024-10-18 11:05:45.102 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:05:45.837 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:05:45.846 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:05:45.857 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (10ms).
+2024-10-18 11:05:45.882 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (38ms).
+2024-10-18 11:05:45.903 +05:30 [DBG] Executing DbCommand [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[RefreshToken] = @__refreshToken_0
+2024-10-18 11:05:46.218 +05:30 [INF] Executed DbCommand (313ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[RefreshToken] = @__refreshToken_0
+2024-10-18 11:05:46.353 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:05:46.417 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:05:46.438 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 206ms reading results.
+2024-10-18 11:05:46.447 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:05:46.466 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (19ms).
+2024-10-18 11:05:54.341 +05:30 [DBG] SaveChanges starting for 'LinenManagementContext'.
+2024-10-18 11:05:54.348 +05:30 [DBG] DetectChanges starting for 'LinenManagementContext'.
+2024-10-18 11:05:54.400 +05:30 [DBG] The unchanged property 'Employee.RefreshToken' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:05:54.445 +05:30 [DBG] An entity of type 'Employee' tracked by 'LinenManagementContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:05:54.455 +05:30 [DBG] DetectChanges completed for 'LinenManagementContext'.
+2024-10-18 11:05:54.778 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:05:54.780 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:05:54.788 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:05:54.788 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-10-18 11:05:54.788 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-18 11:05:54.790 +05:30 [DBG] Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [RefreshToken] = @p0
+OUTPUT 1
+WHERE [EmployeeId] = @p1;
+2024-10-18 11:05:55.027 +05:30 [INF] Executed DbCommand (238ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [RefreshToken] = @p0
+OUTPUT 1
+WHERE [EmployeeId] = @p1;
+2024-10-18 11:05:55.044 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:05:55.045 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 17ms reading results.
+2024-10-18 11:05:55.048 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:05:55.048 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:05:55.062 +05:30 [DBG] An entity of type 'Employee' tracked by 'LinenManagementContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:05:55.089 +05:30 [DBG] SaveChanges completed for 'LinenManagementContext' with 1 entities written to the database.
+2024-10-18 11:05:55.101 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-18 11:05:55.105 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-18 11:05:55.105 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-18 11:05:55.105 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-18 11:05:55.108 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-18 11:05:55.109 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-10-18 11:05:55.140 +05:30 [INF] Executed action TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication) in 18216.0659ms
+2024-10-18 11:05:55.141 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication)'
+2024-10-18 11:05:55.169 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 11:05:55.185 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:05:55.192 +05:30 [DBG] Disposed connection to database '' on server '' (5ms).
+2024-10-18 11:05:55.193 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7098/api/Auth/refresh - 200 null application/json; charset=utf-8 18585.3369ms
+2024-10-18 11:06:03.281 +05:30 [DBG] Connection id "0HN7F6QAH5JF9" received FIN.
+2024-10-18 11:06:03.281 +05:30 [DBG] Connection id "0HN7F6QAH5JF9" is closed. The last processed stream ID was 1.
+2024-10-18 11:06:03.281 +05:30 [DBG] Connection id "0HN7F6QAH5JF9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:06:03.281 +05:30 [DBG] The connection queue processing loop for 0HN7F6QAH5JF9 completed.
+2024-10-18 11:06:03.282 +05:30 [DBG] Connection id "0HN7F6QAH5JF9" stopped.
+2024-10-18 11:09:57.730 +05:30 [DBG] Connection id "0HN7F6QAH5JFA" received FIN.
+2024-10-18 11:09:57.745 +05:30 [DBG] Connection id "0HN7F6QAH5JFA" accepted.
+2024-10-18 11:09:57.745 +05:30 [DBG] Connection id "0HN7F6QAH5JFA" started.
+2024-10-18 11:09:57.755 +05:30 [DBG] Connection id "0HN7F6QAH5JFB" accepted.
+2024-10-18 11:09:57.758 +05:30 [DBG] Connection id "0HN7F6QAH5JFB" started.
+2024-10-18 11:09:57.884 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-18 11:09:57.899 +05:30 [DBG] Connection id "0HN7F6QAH5JFA" stopped.
+2024-10-18 11:09:57.889 +05:30 [DBG] Connection 0HN7F6QAH5JFB established using the following protocol: "Tls12"
+2024-10-18 11:09:57.904 +05:30 [DBG] Connection id "0HN7F6QAH5JFA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:09:57.949 +05:30 [INF] Request starting HTTP/1.1 DELETE https://localhost:7098/api/cartlogs/{11} - null null
+2024-10-18 11:09:57.954 +05:30 [DBG] DELETE requests are not supported
+2024-10-18 11:09:57.958 +05:30 [DBG] 1 candidate(s) found for the request path '/api/cartlogs/{11}'
+2024-10-18 11:09:57.981 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)' with route pattern 'api/Cartlogs/{cartLogId:int}' was rejected by constraint 'cartLogId':'Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint' with value '{11}' for the request path '/api/cartlogs/%7B11%7D'
+2024-10-18 11:09:57.988 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)' with route pattern 'api/Cartlogs/{cartLogId:int}' is not valid for the request path '/api/cartlogs/{11}'
+2024-10-18 11:09:57.988 +05:30 [DBG] Request did not match any endpoints
+2024-10-18 11:09:58.210 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '18-10-2024 05:34:47', Current time (UTC): '18-10-2024 05:39:58'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-18 11:09:58.220 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '18-10-2024 05:34:47', Current time (UTC): '18-10-2024 05:39:58'.
+2024-10-18 11:09:58.227 +05:30 [DBG] Connection id "0HN7F6QAH5JFB" completed keep alive response.
+2024-10-18 11:09:58.228 +05:30 [INF] Request finished HTTP/1.1 DELETE https://localhost:7098/api/cartlogs/{11} - 404 0 null 288.42ms
+2024-10-18 11:09:58.232 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: DELETE https://localhost:7098/api/cartlogs/%7B11%7D, Response status code: 404
+2024-10-18 11:11:39.773 +05:30 [DBG] Connection id "0HN7F6QAH5JFC" accepted.
+2024-10-18 11:11:39.777 +05:30 [DBG] Connection id "0HN7F6QAH5JFC" started.
+2024-10-18 11:11:39.805 +05:30 [DBG] Connection 0HN7F6QAH5JFC established using the following protocol: "Tls12"
+2024-10-18 11:11:39.865 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7098/api/Cartlogs/11 - null null
+2024-10-18 11:11:39.866 +05:30 [DBG] DELETE requests are not supported
+2024-10-18 11:11:39.866 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Cartlogs/11'
+2024-10-18 11:11:39.866 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)' with route pattern 'api/Cartlogs/{cartLogId:int}' is valid for the request path '/api/Cartlogs/11'
+2024-10-18 11:11:39.868 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:11:39.885 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-18 11:11:39.888 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:11:39.997 +05:30 [INF] Route matched with {action = "DeleteCartLog", controller = "Cartlogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteCartLog(Int32) on controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication).
+2024-10-18 11:11:39.999 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 11:11:40.000 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 11:11:40.000 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 11:11:40.000 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 11:11:40.001 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 11:11:40.002 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:11:40.024 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:11:40.029 +05:30 [DBG] Attempting to bind parameter 'cartLogId' of type 'System.Int32' ...
+2024-10-18 11:11:40.033 +05:30 [DBG] Attempting to bind parameter 'cartLogId' of type 'System.Int32' using the name 'cartLogId' in request data ...
+2024-10-18 11:11:40.041 +05:30 [DBG] Done attempting to bind parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:11:40.041 +05:30 [DBG] Done attempting to bind parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:11:40.041 +05:30 [DBG] Attempting to validate the bound parameter 'cartLogId' of type 'System.Int32' ...
+2024-10-18 11:11:40.045 +05:30 [DBG] Done attempting to validate the bound parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:11:40.058 +05:30 [INF] Attempting to delete CartLog with ID 11
+2024-10-18 11:17:20.406 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-18 11:17:20.812 +05:30 [INF] Starting up the API
+2024-10-18 11:17:20.825 +05:30 [DBG] Hosting starting
+2024-10-18 11:17:21.049 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-18 11:17:21.078 +05:30 [DBG] Reading data from file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-4301ba9f-5f84-4d67-92a7-6b9554c69286.xml'.
+2024-10-18 11:17:21.132 +05:30 [DBG] Found key {4301ba9f-5f84-4d67-92a7-6b9554c69286}.
+2024-10-18 11:17:21.184 +05:30 [DBG] Considering key {4301ba9f-5f84-4d67-92a7-6b9554c69286} with expiration date 2025-01-12 06:00:35Z as default key.
+2024-10-18 11:17:21.191 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-18 11:17:21.205 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-10-18 11:17:21.208 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-18 11:17:21.216 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-18 11:17:21.218 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-18 11:17:21.222 +05:30 [DBG] Using key {4301ba9f-5f84-4d67-92a7-6b9554c69286} as the default key.
+2024-10-18 11:17:21.401 +05:30 [DBG] Key ring with default key {4301ba9f-5f84-4d67-92a7-6b9554c69286} was loaded during application startup.
+2024-10-18 11:17:22.102 +05:30 [INF] Now listening on: https://localhost:7098
+2024-10-18 11:17:22.102 +05:30 [INF] Now listening on: http://localhost:5071
+2024-10-18 11:17:22.102 +05:30 [DBG] Loaded hosting startup assembly TDSSWebApplication
+2024-10-18 11:17:22.102 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-10-18 11:17:22.103 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-18 11:17:22.103 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-10-18 11:17:22.244 +05:30 [DBG] Connection id "0HN7F71B2G06M" accepted.
+2024-10-18 11:17:22.247 +05:30 [DBG] Connection id "0HN7F71B2G06M" started.
+2024-10-18 11:17:22.274 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-18 11:17:22.274 +05:30 [INF] Hosting environment: Development
+2024-10-18 11:17:22.274 +05:30 [INF] Content root path: C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication
+2024-10-18 11:17:22.274 +05:30 [DBG] Hosting started
+2024-10-18 11:17:22.276 +05:30 [DBG] Connection id "0HN7F71B2G06M" received FIN.
+2024-10-18 11:17:22.341 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-18 11:17:22.601 +05:30 [DBG] Connection id "0HN7F71B2G06M" stopped.
+2024-10-18 11:17:22.610 +05:30 [DBG] Connection id "0HN7F71B2G06M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:17:29.952 +05:30 [DBG] Connection id "0HN7F71B2G06N" accepted.
+2024-10-18 11:17:29.968 +05:30 [DBG] Connection id "0HN7F71B2G06N" started.
+2024-10-18 11:17:30.248 +05:30 [DBG] Connection 0HN7F71B2G06N established using the following protocol: "Tls12"
+2024-10-18 11:17:30.559 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/index.html - null null
+2024-10-18 11:17:30.856 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-18 11:17:31.093 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-10-18 11:17:31.097 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-18 11:17:31.239 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-10-18 11:17:31.240 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-18 11:17:31.246 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/index.html - 200 null text/html;charset=utf-8 702.1535ms
+2024-10-18 11:17:33.923 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-18 11:17:34.011 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_vs/browserLink - null null
+2024-10-18 11:17:34.021 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 98.1874ms
+2024-10-18 11:17:34.144 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.4544ms
+2024-10-18 11:17:34.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - null null
+2024-10-18 11:17:34.645 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 355.9397ms
+2024-10-18 11:17:39.495 +05:30 [DBG] Connection id "0HN7F71B2G06N" received FIN.
+2024-10-18 11:17:39.500 +05:30 [DBG] The connection queue processing loop for 0HN7F71B2G06N completed.
+2024-10-18 11:17:39.507 +05:30 [DBG] Connection id "0HN7F71B2G06N" is closed. The last processed stream ID was 7.
+2024-10-18 11:17:39.507 +05:30 [DBG] Connection id "0HN7F71B2G06N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:17:39.517 +05:30 [DBG] Connection id "0HN7F71B2G06N" stopped.
+2024-10-18 11:18:08.238 +05:30 [DBG] Connection id "0HN7F71B2G06O" accepted.
+2024-10-18 11:18:08.239 +05:30 [DBG] Connection id "0HN7F71B2G06O" started.
+2024-10-18 11:18:08.275 +05:30 [DBG] Connection 0HN7F71B2G06O established using the following protocol: "Tls12"
+2024-10-18 11:18:08.287 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7098/api/Auth/refresh - application/json 112
+2024-10-18 11:18:08.293 +05:30 [DBG] POST requests are not supported
+2024-10-18 11:18:08.374 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Auth/refresh'
+2024-10-18 11:18:08.381 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication)' with route pattern 'api/Auth/refresh' is valid for the request path '/api/Auth/refresh'
+2024-10-18 11:18:08.382 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication)'
+2024-10-18 11:18:08.612 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-18 11:18:08.618 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication)'
+2024-10-18 11:18:08.684 +05:30 [INF] Route matched with {action = "Refresh", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refresh(TDSSWebApplication.DTO.TokenRefreshDto) on controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication).
+2024-10-18 11:18:08.686 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 11:18:08.687 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 11:18:08.688 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 11:18:08.688 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 11:18:08.688 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 11:18:08.693 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication)
+2024-10-18 11:18:09.100 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-18 11:18:12.596 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication)
+2024-10-18 11:18:12.620 +05:30 [DBG] Attempting to bind parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto' ...
+2024-10-18 11:18:12.625 +05:30 [DBG] Attempting to bind parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto' using the name '' in request data ...
+2024-10-18 11:18:12.628 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-10-18 11:18:12.641 +05:30 [DBG] Connection id "0HN7F71B2G06O", Request id "0HN7F71B2G06O:00000001": started reading request body.
+2024-10-18 11:18:12.641 +05:30 [DBG] Connection id "0HN7F71B2G06O", Request id "0HN7F71B2G06O:00000001": done reading request body.
+2024-10-18 11:18:12.650 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'TDSSWebApplication.DTO.TokenRefreshDto'
+2024-10-18 11:18:12.650 +05:30 [DBG] Done attempting to bind parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto'.
+2024-10-18 11:18:12.651 +05:30 [DBG] Done attempting to bind parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto'.
+2024-10-18 11:18:12.651 +05:30 [DBG] Attempting to validate the bound parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto' ...
+2024-10-18 11:18:12.665 +05:30 [DBG] Done attempting to validate the bound parameter 'tokenRefreshDto' of type 'TDSSWebApplication.DTO.TokenRefreshDto'.
+2024-10-18 11:18:12.670 +05:30 [INF] Jwt Athentication TokenRefreh
+2024-10-18 11:18:15.782 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 11:18:16.152 +05:30 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .FirstOrDefault(e => e.RefreshToken == __refreshToken_0)'
+2024-10-18 11:18:17.024 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: new SingleQueryingEnumerable<Employee>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Email (string) Required MaxLength(100), 1], [Property: Employee.Name (string) Required MaxLength(50), 2], [Property: Employee.Password (string) Required, 3], [Property: Employee.RefreshToken (string), 4] }
+            SELECT TOP(1) e.EmployeeId, e.Email, e.Name, e.Password, e.RefreshToken
+            FROM Employees AS e
+            WHERE e.RefreshToken == @__refreshToken_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+        TDSSWebApplication.Models.LinenManagementContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-18 11:18:17.213 +05:30 [DBG] Creating DbConnection.
+2024-10-18 11:18:17.279 +05:30 [DBG] Created DbConnection. (62ms).
+2024-10-18 11:18:17.289 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:18:18.193 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:18:18.202 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:18:18.212 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (11ms).
+2024-10-18 11:18:18.237 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (36ms).
+2024-10-18 11:18:18.259 +05:30 [DBG] Executing DbCommand [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[RefreshToken] = @__refreshToken_0
+2024-10-18 11:18:18.542 +05:30 [INF] Executed DbCommand (269ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[RefreshToken] = @__refreshToken_0
+2024-10-18 11:18:18.609 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:18:18.628 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 71ms reading results.
+2024-10-18 11:18:18.640 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:18:18.656 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (17ms).
+2024-10-18 11:18:18.687 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-18 11:18:18.691 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-18 11:18:18.692 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-10-18 11:18:18.695 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-10-18 11:18:18.697 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-10-18 11:18:18.856 +05:30 [INF] Executed action TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication) in 10144.9372ms
+2024-10-18 11:18:18.858 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.AuthController.Refresh (TDSSWebApplication)'
+2024-10-18 11:18:18.868 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 11:18:18.942 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:18:18.944 +05:30 [DBG] Disposed connection to database '' on server '' (4ms).
+2024-10-18 11:18:18.945 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7098/api/Auth/refresh - 401 null application/problem+json; charset=utf-8 10657.8899ms
+2024-10-18 11:18:21.861 +05:30 [DBG] Connection id "0HN7F71B2G06O" received FIN.
+2024-10-18 11:18:21.862 +05:30 [DBG] Connection id "0HN7F71B2G06O" is closed. The last processed stream ID was 1.
+2024-10-18 11:18:21.862 +05:30 [DBG] Connection id "0HN7F71B2G06O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:18:21.863 +05:30 [DBG] The connection queue processing loop for 0HN7F71B2G06O completed.
+2024-10-18 11:18:21.863 +05:30 [DBG] Connection id "0HN7F71B2G06O" stopped.
+2024-10-18 11:18:58.698 +05:30 [DBG] Connection id "0HN7F71B2G06P" accepted.
+2024-10-18 11:18:58.699 +05:30 [DBG] Connection id "0HN7F71B2G06P" started.
+2024-10-18 11:18:58.742 +05:30 [DBG] Connection 0HN7F71B2G06P established using the following protocol: "Tls12"
+2024-10-18 11:18:58.763 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7098/api/Auth/login - application/json 41
+2024-10-18 11:18:58.766 +05:30 [DBG] POST requests are not supported
+2024-10-18 11:18:58.778 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2024-10-18 11:18:58.779 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2024-10-18 11:18:58.813 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication)'
+2024-10-18 11:18:58.816 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-18 11:18:58.816 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication)'
+2024-10-18 11:18:58.837 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TDSSWebApplication.DTO.LoginDto) on controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication).
+2024-10-18 11:18:58.838 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 11:18:58.838 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 11:18:58.838 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 11:18:58.838 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 11:18:58.838 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 11:18:58.838 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication)
+2024-10-18 11:19:01.105 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.AuthController (TDSSWebApplication)
+2024-10-18 11:19:01.106 +05:30 [DBG] Attempting to bind parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto' ...
+2024-10-18 11:19:01.106 +05:30 [DBG] Attempting to bind parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto' using the name '' in request data ...
+2024-10-18 11:19:01.107 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-10-18 11:19:01.109 +05:30 [DBG] Connection id "0HN7F71B2G06P", Request id "0HN7F71B2G06P:00000001": started reading request body.
+2024-10-18 11:19:01.110 +05:30 [DBG] Connection id "0HN7F71B2G06P", Request id "0HN7F71B2G06P:00000001": done reading request body.
+2024-10-18 11:19:01.115 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'TDSSWebApplication.DTO.LoginDto'
+2024-10-18 11:19:01.115 +05:30 [DBG] Done attempting to bind parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto'.
+2024-10-18 11:19:01.115 +05:30 [DBG] Done attempting to bind parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto'.
+2024-10-18 11:19:01.116 +05:30 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto' ...
+2024-10-18 11:19:01.122 +05:30 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'TDSSWebApplication.DTO.LoginDto'.
+2024-10-18 11:19:03.275 +05:30 [INF] Jwt token authentication login
+2024-10-18 11:19:05.184 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 11:19:05.189 +05:30 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .SingleOrDefault(u => u.Name == __name_0)'
+2024-10-18 11:19:05.208 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: new SingleQueryingEnumerable<Employee>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Email (string) Required MaxLength(100), 1], [Property: Employee.Name (string) Required MaxLength(50), 2], [Property: Employee.Password (string) Required, 3], [Property: Employee.RefreshToken (string), 4] }
+            SELECT TOP(2) e.EmployeeId, e.Email, e.Name, e.Password, e.RefreshToken
+            FROM Employees AS e
+            WHERE e.Name == @__name_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+        TDSSWebApplication.Models.LinenManagementContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-18 11:19:05.210 +05:30 [DBG] Creating DbConnection.
+2024-10-18 11:19:05.212 +05:30 [DBG] Created DbConnection. (2ms).
+2024-10-18 11:19:05.213 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:19:05.215 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:19:05.215 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:19:05.215 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:19:05.215 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:19:05.216 +05:30 [DBG] Executing DbCommand [Parameters=[@__name_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[Name] = @__name_0
+2024-10-18 11:19:06.297 +05:30 [INF] Executed DbCommand (1,081ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[EmployeeId], [e].[Email], [e].[Name], [e].[Password], [e].[RefreshToken]
+FROM [Employees] AS [e]
+WHERE [e].[Name] = @__name_0
+2024-10-18 11:19:06.535 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:19:06.602 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:19:06.602 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 304ms reading results.
+2024-10-18 11:19:06.602 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:19:06.602 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:20:06.954 +05:30 [DBG] SaveChanges starting for 'LinenManagementContext'.
+2024-10-18 11:20:06.962 +05:30 [DBG] DetectChanges starting for 'LinenManagementContext'.
+2024-10-18 11:20:07.046 +05:30 [DBG] The unchanged property 'Employee.RefreshToken' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:20:07.070 +05:30 [DBG] An entity of type 'Employee' tracked by 'LinenManagementContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:20:07.078 +05:30 [DBG] DetectChanges completed for 'LinenManagementContext'.
+2024-10-18 11:20:07.325 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:20:07.325 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:20:07.332 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:20:07.332 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:20:07.332 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:20:07.335 +05:30 [DBG] Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [RefreshToken] = @p0
+OUTPUT 1
+WHERE [EmployeeId] = @p1;
+2024-10-18 11:20:07.480 +05:30 [INF] Executed DbCommand (147ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [RefreshToken] = @p0
+OUTPUT 1
+WHERE [EmployeeId] = @p1;
+2024-10-18 11:20:07.499 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:20:07.499 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 18ms reading results.
+2024-10-18 11:20:07.503 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:20:07.503 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:20:07.515 +05:30 [DBG] An entity of type 'Employee' tracked by 'LinenManagementContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:20:07.535 +05:30 [DBG] SaveChanges completed for 'LinenManagementContext' with 1 entities written to the database.
+2024-10-18 11:20:07.537 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-18 11:20:07.538 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-18 11:20:07.538 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-18 11:20:07.538 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-18 11:20:07.538 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-18 11:20:07.538 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-10-18 11:20:07.543 +05:30 [INF] Executed action TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication) in 68705.2252ms
+2024-10-18 11:20:07.544 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.AuthController.Login (TDSSWebApplication)'
+2024-10-18 11:20:07.544 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 11:20:07.544 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:20:07.544 +05:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-10-18 11:20:07.544 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7098/api/Auth/login - 200 null application/json; charset=utf-8 68781.2263ms
+2024-10-18 11:20:11.167 +05:30 [DBG] Connection id "0HN7F71B2G06P" received FIN.
+2024-10-18 11:20:11.167 +05:30 [DBG] Connection id "0HN7F71B2G06P" is closed. The last processed stream ID was 1.
+2024-10-18 11:20:11.168 +05:30 [DBG] Connection id "0HN7F71B2G06P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:20:11.168 +05:30 [DBG] The connection queue processing loop for 0HN7F71B2G06P completed.
+2024-10-18 11:20:11.168 +05:30 [DBG] Connection id "0HN7F71B2G06P" stopped.
+2024-10-18 11:21:20.038 +05:30 [DBG] Connection id "0HN7F71B2G06Q" received FIN.
+2024-10-18 11:21:20.039 +05:30 [DBG] Connection id "0HN7F71B2G06Q" accepted.
+2024-10-18 11:21:20.040 +05:30 [DBG] Connection id "0HN7F71B2G06Q" started.
+2024-10-18 11:21:20.049 +05:30 [DBG] Connection id "0HN7F71B2G06R" accepted.
+2024-10-18 11:21:20.051 +05:30 [DBG] Connection id "0HN7F71B2G06R" started.
+2024-10-18 11:21:20.059 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-18 11:21:20.097 +05:30 [DBG] Connection id "0HN7F71B2G06Q" stopped.
+2024-10-18 11:21:20.097 +05:30 [DBG] Connection 0HN7F71B2G06R established using the following protocol: "Tls12"
+2024-10-18 11:21:20.097 +05:30 [DBG] Connection id "0HN7F71B2G06Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:21:20.109 +05:30 [INF] Request starting HTTP/1.1 DELETE https://localhost:7098/api/cartlogs/11 - null null
+2024-10-18 11:21:20.110 +05:30 [DBG] DELETE requests are not supported
+2024-10-18 11:21:20.110 +05:30 [DBG] 1 candidate(s) found for the request path '/api/cartlogs/11'
+2024-10-18 11:21:20.111 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)' with route pattern 'api/Cartlogs/{cartLogId:int}' is valid for the request path '/api/cartlogs/11'
+2024-10-18 11:21:20.111 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:21:20.242 +05:30 [DBG] Successfully validated the token.
+2024-10-18 11:21:20.244 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-18 11:21:20.246 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:21:20.257 +05:30 [INF] Route matched with {action = "DeleteCartLog", controller = "Cartlogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteCartLog(Int32) on controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication).
+2024-10-18 11:21:20.258 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 11:21:20.258 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 11:21:20.258 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 11:21:20.258 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 11:21:20.258 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 11:21:20.258 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:21:20.261 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:21:20.262 +05:30 [DBG] Attempting to bind parameter 'cartLogId' of type 'System.Int32' ...
+2024-10-18 11:21:20.262 +05:30 [DBG] Attempting to bind parameter 'cartLogId' of type 'System.Int32' using the name 'cartLogId' in request data ...
+2024-10-18 11:21:20.266 +05:30 [DBG] Done attempting to bind parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:21:20.266 +05:30 [DBG] Done attempting to bind parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:21:20.266 +05:30 [DBG] Attempting to validate the bound parameter 'cartLogId' of type 'System.Int32' ...
+2024-10-18 11:21:20.268 +05:30 [DBG] Done attempting to validate the bound parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:21:20.272 +05:30 [INF] Attempting to delete CartLog with ID 11
+2024-10-18 11:21:56.344 +05:30 [INF] Trace: Deleting CartLog with ID 11
+2024-10-18 11:21:57.698 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 11:21:57.781 +05:30 [DBG] Compiling query expression: 
+'DbSet<CartLog>()
+    .Include(cl => cl.CartLogDetails)
+    .FirstOrDefault(cl => cl.CartLogId == __cartLogId_0)'
+2024-10-18 11:21:57.814 +05:30 [DBG] Including navigation: 'CartLog.CartLogDetails'.
+2024-10-18 11:21:58.070 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<CartLog>(
+    asyncEnumerable: new SingleQueryingEnumerable<CartLog>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: CartLog.CartLogId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CartLog.ActualWeight (int) Required, 1], [Property: CartLog.CartId (int) Required FK Index, 2], [Property: CartLog.Comments (string) MaxLength(2000), 3], [Property: CartLog.DateWeighed (DateTime) Required ValueGenerated.OnAdd, 4], [Property: CartLog.EmployeeId (int) Required FK Index, 5], [Property: CartLog.LocationId (int) Required FK Index, 6], [Property: CartLog.ReceiptNumber (string) MaxLength(50), 7], [Property: CartLog.ReportedWeight (int?), 8] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: CartLogDetail.CartLogDetailId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: CartLogDetail.CartLogId (int) Required FK Index, 10], [Property: CartLogDetail.Count (int) Required, 11], [Property: CartLogDetail.LinenId (int) Required FK Index, 12] }
+                3 -> 9
+            SELECT t.CartLogId, t.ActualWeight, t.CartId, t.Comments, t.DateWeighed, t.EmployeeId, t.LocationId, t.ReceiptNumber, t.ReportedWeight, c0.CartLogDetailId, c0.CartLogId, c0.Count, c0.LinenId
+            FROM 
+            (
+                SELECT TOP(1) c.CartLogId, c.ActualWeight, c.CartId, c.Comments, c.DateWeighed, c.EmployeeId, c.LocationId, c.ReceiptNumber, c.ReportedWeight
+                FROM CartLog AS c
+                WHERE c.CartLogId == @__cartLogId_0
+            ) AS t
+            LEFT JOIN CartLogDetail AS c0 ON t.CartLogId == c0.CartLogId
+            ORDER BY t.CartLogId ASC), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CartLog>, 
+        TDSSWebApplication.Models.LinenManagementContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-18 11:21:58.076 +05:30 [DBG] Creating DbConnection.
+2024-10-18 11:21:58.076 +05:30 [DBG] Created DbConnection. (0ms).
+2024-10-18 11:21:58.076 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:21:58.077 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:21:58.077 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:21:58.077 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:21:58.077 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:21:58.077 +05:30 [DBG] Executing DbCommand [Parameters=[@__cartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:21:58.159 +05:30 [INF] Executed DbCommand (82ms) [Parameters=[@__cartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:21:58.182 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:21:58.277 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLogDetail' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:21:58.283 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:21:58.283 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 123ms reading results.
+2024-10-18 11:21:58.283 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:21:58.283 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:22:18.552 +05:30 [WRN] Unauthorized access during CartLog deletion.
+2024-10-18 11:22:18.654 +05:30 [WRN] Unauthorized access during CartLog deletion for CartLog ID 11
+System.UnauthorizedAccessException: You are not authorized to delete this CartLog.
+   at TDSSWebApplication.Services.CartlogServices.DeleteCartLogAsync(Int32 cartLogId, Int32 employeeId) in C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\Services\CartlogServices.cs:line 196
+2024-10-18 11:22:18.941 +05:30 [WRN] Unauthorized access when deleting CartLog with ID 11
+System.UnauthorizedAccessException: You are not authorized to delete this CartLog.
+   at TDSSWebApplication.Services.CartlogServices.DeleteCartLogAsync(Int32 cartLogId, Int32 employeeId) in C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\Services\CartlogServices.cs:line 196
+   at TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog(Int32 cartLogId) in C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\Controllers\CartlogsController.cs:line 186
+2024-10-18 11:22:18.944 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-18 11:22:18.944 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-18 11:22:18.944 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-18 11:22:18.944 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-18 11:22:18.944 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-10-18 11:22:18.944 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2024-10-18 11:22:18.950 +05:30 [INF] Executed action TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication) in 58691.8534ms
+2024-10-18 11:22:18.950 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:22:18.951 +05:30 [DBG] Connection id "0HN7F71B2G06R" completed keep alive response.
+2024-10-18 11:22:18.951 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 11:22:18.951 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:22:18.951 +05:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-10-18 11:22:18.951 +05:30 [INF] Request finished HTTP/1.1 DELETE https://localhost:7098/api/cartlogs/11 - 401 null text/plain; charset=utf-8 58842.4933ms
+2024-10-18 11:29:29.652 +05:30 [DBG] Connection id "0HN7F71B2G06S" received FIN.
+2024-10-18 11:29:29.704 +05:30 [DBG] Connection id "0HN7F71B2G06S" accepted.
+2024-10-18 11:29:29.706 +05:30 [DBG] Connection id "0HN7F71B2G06S" started.
+2024-10-18 11:29:29.762 +05:30 [DBG] Connection id "0HN7F71B2G06T" accepted.
+2024-10-18 11:29:29.767 +05:30 [DBG] Connection id "0HN7F71B2G06T" started.
+2024-10-18 11:29:29.877 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-18 11:29:29.880 +05:30 [DBG] Connection 0HN7F71B2G06T established using the following protocol: "Tls12"
+2024-10-18 11:29:29.933 +05:30 [DBG] Connection id "0HN7F71B2G06S" stopped.
+2024-10-18 11:29:29.934 +05:30 [DBG] Connection id "0HN7F71B2G06S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:29:29.962 +05:30 [INF] Request starting HTTP/1.1 DELETE https://localhost:7098/api/cartlogs/11 - null null
+2024-10-18 11:29:29.970 +05:30 [DBG] DELETE requests are not supported
+2024-10-18 11:29:29.972 +05:30 [DBG] 1 candidate(s) found for the request path '/api/cartlogs/11'
+2024-10-18 11:29:29.976 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)' with route pattern 'api/Cartlogs/{cartLogId:int}' is valid for the request path '/api/cartlogs/11'
+2024-10-18 11:29:29.978 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:29:30.010 +05:30 [DBG] Successfully validated the token.
+2024-10-18 11:29:30.011 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-18 11:29:30.017 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:29:30.030 +05:30 [INF] Route matched with {action = "DeleteCartLog", controller = "Cartlogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteCartLog(Int32) on controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication).
+2024-10-18 11:29:30.032 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 11:29:30.032 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 11:29:30.034 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 11:29:30.034 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 11:29:30.034 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 11:29:30.035 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:29:30.052 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:29:30.057 +05:30 [DBG] Attempting to bind parameter 'cartLogId' of type 'System.Int32' ...
+2024-10-18 11:29:30.058 +05:30 [DBG] Attempting to bind parameter 'cartLogId' of type 'System.Int32' using the name 'cartLogId' in request data ...
+2024-10-18 11:29:30.060 +05:30 [DBG] Done attempting to bind parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:29:30.060 +05:30 [DBG] Done attempting to bind parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:29:30.060 +05:30 [DBG] Attempting to validate the bound parameter 'cartLogId' of type 'System.Int32' ...
+2024-10-18 11:29:30.060 +05:30 [DBG] Done attempting to validate the bound parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:29:30.061 +05:30 [INF] Attempting to delete CartLog with ID 11
+2024-10-18 11:29:30.062 +05:30 [INF] Trace: Deleting CartLog with ID 11
+2024-10-18 11:29:30.079 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 11:29:30.107 +05:30 [DBG] Creating DbConnection.
+2024-10-18 11:29:30.114 +05:30 [DBG] Created DbConnection. (7ms).
+2024-10-18 11:29:30.115 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:29:30.180 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:29:30.185 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:29:30.189 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:29:30.190 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-10-18 11:29:30.194 +05:30 [DBG] Executing DbCommand [Parameters=[@__cartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:29:30.227 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@__cartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:29:30.231 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:29:30.233 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLogDetail' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:29:30.233 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:29:30.234 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 6ms reading results.
+2024-10-18 11:29:30.234 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:29:30.234 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:29:30.235 +05:30 [WRN] Unauthorized access during CartLog deletion.
+2024-10-18 11:29:30.379 +05:30 [WRN] Unauthorized access during CartLog deletion for CartLog ID 11
+System.UnauthorizedAccessException: You are not authorized to delete this CartLog.
+   at TDSSWebApplication.Services.CartlogServices.DeleteCartLogAsync(Int32 cartLogId, Int32 employeeId) in C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\Services\CartlogServices.cs:line 196
+2024-10-18 11:29:30.545 +05:30 [WRN] Unauthorized access when deleting CartLog with ID 11
+System.UnauthorizedAccessException: You are not authorized to delete this CartLog.
+   at TDSSWebApplication.Services.CartlogServices.DeleteCartLogAsync(Int32 cartLogId, Int32 employeeId) in C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\Services\CartlogServices.cs:line 196
+   at TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog(Int32 cartLogId) in C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\Controllers\CartlogsController.cs:line 186
+2024-10-18 11:29:30.547 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-18 11:29:30.548 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-18 11:29:30.548 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-18 11:29:30.548 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-18 11:29:30.548 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-10-18 11:29:30.548 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2024-10-18 11:29:30.551 +05:30 [INF] Executed action TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication) in 516.134ms
+2024-10-18 11:29:30.551 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:29:30.551 +05:30 [DBG] Connection id "0HN7F71B2G06T" completed keep alive response.
+2024-10-18 11:29:30.551 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 11:29:30.551 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:29:30.552 +05:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-10-18 11:29:30.553 +05:30 [INF] Request finished HTTP/1.1 DELETE https://localhost:7098/api/cartlogs/11 - 401 null text/plain; charset=utf-8 593.2691ms
+2024-10-18 11:30:27.489 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-18 11:30:27.787 +05:30 [INF] Starting up the API
+2024-10-18 11:30:27.797 +05:30 [DBG] Hosting starting
+2024-10-18 11:30:28.016 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-18 11:30:28.035 +05:30 [DBG] Reading data from file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-4301ba9f-5f84-4d67-92a7-6b9554c69286.xml'.
+2024-10-18 11:30:28.085 +05:30 [DBG] Found key {4301ba9f-5f84-4d67-92a7-6b9554c69286}.
+2024-10-18 11:30:28.109 +05:30 [DBG] Considering key {4301ba9f-5f84-4d67-92a7-6b9554c69286} with expiration date 2025-01-12 06:00:35Z as default key.
+2024-10-18 11:30:28.116 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-18 11:30:28.119 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-10-18 11:30:28.121 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-18 11:30:28.129 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-18 11:30:28.130 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-18 11:30:28.132 +05:30 [DBG] Using key {4301ba9f-5f84-4d67-92a7-6b9554c69286} as the default key.
+2024-10-18 11:30:28.137 +05:30 [DBG] Key ring with default key {4301ba9f-5f84-4d67-92a7-6b9554c69286} was loaded during application startup.
+2024-10-18 11:30:29.279 +05:30 [INF] Now listening on: https://localhost:7098
+2024-10-18 11:30:29.279 +05:30 [INF] Now listening on: http://localhost:5071
+2024-10-18 11:30:29.279 +05:30 [DBG] Loaded hosting startup assembly TDSSWebApplication
+2024-10-18 11:30:29.279 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-10-18 11:30:29.280 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-18 11:30:29.280 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-10-18 11:30:29.433 +05:30 [DBG] Connection id "0HN7F78LLMTSN" received FIN.
+2024-10-18 11:30:29.474 +05:30 [DBG] Connection id "0HN7F78LLMTSN" accepted.
+2024-10-18 11:30:29.476 +05:30 [DBG] Connection id "0HN7F78LLMTSN" started.
+2024-10-18 11:30:29.560 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-18 11:30:29.560 +05:30 [INF] Hosting environment: Development
+2024-10-18 11:30:29.560 +05:30 [INF] Content root path: C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication
+2024-10-18 11:30:29.561 +05:30 [DBG] Hosting started
+2024-10-18 11:30:29.639 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-18 11:30:29.832 +05:30 [DBG] Connection id "0HN7F78LLMTSN" stopped.
+2024-10-18 11:30:29.860 +05:30 [DBG] Connection id "0HN7F78LLMTSN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:30:35.337 +05:30 [DBG] Connection id "0HN7F78LLMTSO" accepted.
+2024-10-18 11:30:35.463 +05:30 [DBG] Connection id "0HN7F78LLMTSO" started.
+2024-10-18 11:30:36.322 +05:30 [DBG] Connection 0HN7F78LLMTSO established using the following protocol: "Tls12"
+2024-10-18 11:30:36.838 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/index.html - null null
+2024-10-18 11:30:37.749 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-18 11:30:37.990 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-10-18 11:30:37.994 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-18 11:30:38.334 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-10-18 11:30:38.335 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-18 11:30:38.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/index.html - 200 null text/html;charset=utf-8 1526.8765ms
+2024-10-18 11:30:39.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_vs/browserLink - null null
+2024-10-18 11:30:39.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-18 11:30:39.421 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 14.4524ms
+2024-10-18 11:30:39.704 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/_vs/browserLink - 200 null text/javascript; charset=UTF-8 298.5443ms
+2024-10-18 11:30:39.974 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - null null
+2024-10-18 11:30:41.208 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7098/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1234.0498ms
+2024-10-18 11:30:44.656 +05:30 [DBG] Connection id "0HN7F78LLMTSO" received FIN.
+2024-10-18 11:30:44.668 +05:30 [DBG] Connection id "0HN7F78LLMTSO" is closed. The last processed stream ID was 7.
+2024-10-18 11:30:44.668 +05:30 [DBG] Connection id "0HN7F78LLMTSO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:30:44.672 +05:30 [DBG] The connection queue processing loop for 0HN7F78LLMTSO completed.
+2024-10-18 11:30:44.674 +05:30 [DBG] Connection id "0HN7F78LLMTSO" stopped.
+2024-10-18 11:30:56.453 +05:30 [DBG] Connection id "0HN7F78LLMTSP" accepted.
+2024-10-18 11:30:56.454 +05:30 [DBG] Connection id "0HN7F78LLMTSP" received FIN.
+2024-10-18 11:30:56.454 +05:30 [DBG] Connection id "0HN7F78LLMTSP" started.
+2024-10-18 11:30:56.454 +05:30 [DBG] Connection id "0HN7F78LLMTSQ" accepted.
+2024-10-18 11:30:56.455 +05:30 [DBG] Connection id "0HN7F78LLMTSQ" started.
+2024-10-18 11:30:56.456 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-18 11:30:56.457 +05:30 [DBG] Connection id "0HN7F78LLMTSP" stopped.
+2024-10-18 11:30:56.457 +05:30 [DBG] Connection id "0HN7F78LLMTSP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:30:56.469 +05:30 [DBG] Connection 0HN7F78LLMTSQ established using the following protocol: "Tls12"
+2024-10-18 11:30:56.486 +05:30 [INF] Request starting HTTP/1.1 DELETE https://localhost:7098/api/cartlogs/11 - null null
+2024-10-18 11:30:56.494 +05:30 [DBG] DELETE requests are not supported
+2024-10-18 11:30:56.538 +05:30 [DBG] 1 candidate(s) found for the request path '/api/cartlogs/11'
+2024-10-18 11:30:56.544 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)' with route pattern 'api/Cartlogs/{cartLogId:int}' is valid for the request path '/api/cartlogs/11'
+2024-10-18 11:30:56.545 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:30:56.833 +05:30 [DBG] Successfully validated the token.
+2024-10-18 11:30:56.835 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-18 11:30:56.838 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:30:56.896 +05:30 [INF] Route matched with {action = "DeleteCartLog", controller = "Cartlogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteCartLog(Int32) on controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication).
+2024-10-18 11:30:56.899 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 11:30:56.899 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 11:30:56.900 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 11:30:56.900 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 11:30:56.901 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 11:30:56.905 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:30:57.297 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-18 11:30:57.339 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:30:57.366 +05:30 [DBG] Attempting to bind parameter 'cartLogId' of type 'System.Int32' ...
+2024-10-18 11:30:57.369 +05:30 [DBG] Attempting to bind parameter 'cartLogId' of type 'System.Int32' using the name 'cartLogId' in request data ...
+2024-10-18 11:30:57.370 +05:30 [DBG] Done attempting to bind parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:30:57.370 +05:30 [DBG] Done attempting to bind parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:30:57.370 +05:30 [DBG] Attempting to validate the bound parameter 'cartLogId' of type 'System.Int32' ...
+2024-10-18 11:30:57.372 +05:30 [DBG] Done attempting to validate the bound parameter 'cartLogId' of type 'System.Int32'.
+2024-10-18 11:30:57.379 +05:30 [INF] Attempting to delete CartLog with ID 11
+2024-10-18 11:31:32.643 +05:30 [INF] Trace: Deleting CartLog with ID 11
+2024-10-18 11:31:47.454 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 11:31:50.377 +05:30 [DBG] Compiling query expression: 
+'DbSet<CartLog>()
+    .Include(cl => cl.CartLogDetails)
+    .FirstOrDefault(cl => cl.CartLogId == __cartLogId_0)'
+2024-10-18 11:31:50.546 +05:30 [DBG] Including navigation: 'CartLog.CartLogDetails'.
+2024-10-18 11:31:51.297 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<CartLog>(
+    asyncEnumerable: new SingleQueryingEnumerable<CartLog>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: CartLog.CartLogId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CartLog.ActualWeight (int) Required, 1], [Property: CartLog.CartId (int) Required FK Index, 2], [Property: CartLog.Comments (string) MaxLength(2000), 3], [Property: CartLog.DateWeighed (DateTime) Required ValueGenerated.OnAdd, 4], [Property: CartLog.EmployeeId (int) Required FK Index, 5], [Property: CartLog.LocationId (int) Required FK Index, 6], [Property: CartLog.ReceiptNumber (string) MaxLength(50), 7], [Property: CartLog.ReportedWeight (int?), 8] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: CartLogDetail.CartLogDetailId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: CartLogDetail.CartLogId (int) Required FK Index, 10], [Property: CartLogDetail.Count (int) Required, 11], [Property: CartLogDetail.LinenId (int) Required FK Index, 12] }
+                3 -> 9
+            SELECT t.CartLogId, t.ActualWeight, t.CartId, t.Comments, t.DateWeighed, t.EmployeeId, t.LocationId, t.ReceiptNumber, t.ReportedWeight, c0.CartLogDetailId, c0.CartLogId, c0.Count, c0.LinenId
+            FROM 
+            (
+                SELECT TOP(1) c.CartLogId, c.ActualWeight, c.CartId, c.Comments, c.DateWeighed, c.EmployeeId, c.LocationId, c.ReceiptNumber, c.ReportedWeight
+                FROM CartLog AS c
+                WHERE c.CartLogId == @__cartLogId_0
+            ) AS t
+            LEFT JOIN CartLogDetail AS c0 ON t.CartLogId == c0.CartLogId
+            ORDER BY t.CartLogId ASC), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CartLog>, 
+        TDSSWebApplication.Models.LinenManagementContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-18 11:31:51.450 +05:30 [DBG] Creating DbConnection.
+2024-10-18 11:31:51.525 +05:30 [DBG] Created DbConnection. (71ms).
+2024-10-18 11:31:51.538 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:31:52.126 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:31:52.132 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:31:52.142 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (8ms).
+2024-10-18 11:31:52.159 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (26ms).
+2024-10-18 11:31:52.178 +05:30 [DBG] Executing DbCommand [Parameters=[@__cartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:31:52.351 +05:30 [INF] Executed DbCommand (179ms) [Parameters=[@__cartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:31:52.442 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:31:52.532 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLogDetail' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:31:52.543 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:31:52.557 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 195ms reading results.
+2024-10-18 11:31:52.563 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:31:52.573 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (9ms).
+2024-10-18 11:32:13.268 +05:30 [DBG] An entity of type 'CartLogDetail' tracked by 'LinenManagementContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:32:14.697 +05:30 [DBG] An entity of type 'CartLog' tracked by 'LinenManagementContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:32:16.290 +05:30 [DBG] SaveChanges starting for 'LinenManagementContext'.
+2024-10-18 11:32:16.297 +05:30 [DBG] DetectChanges starting for 'LinenManagementContext'.
+2024-10-18 11:32:16.303 +05:30 [DBG] DetectChanges completed for 'LinenManagementContext'.
+2024-10-18 11:32:16.581 +05:30 [DBG] Executing 2 update commands as a batch.
+2024-10-18 11:32:16.590 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:32:16.592 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:32:16.596 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-10-18 11:32:16.615 +05:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-10-18 11:32:16.623 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:32:16.624 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:32:16.626 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-10-18 11:32:16.626 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [CartLogDetail]
+OUTPUT 1
+WHERE [CartLogDetailId] = @p0;
+DELETE FROM [CartLog]
+OUTPUT 1
+WHERE [CartLogId] = @p1;
+2024-10-18 11:32:16.687 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [CartLogDetail]
+OUTPUT 1
+WHERE [CartLogDetailId] = @p0;
+DELETE FROM [CartLog]
+OUTPUT 1
+WHERE [CartLogId] = @p1;
+2024-10-18 11:32:16.696 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:32:16.697 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 9ms reading results.
+2024-10-18 11:32:16.701 +05:30 [DBG] Committing transaction.
+2024-10-18 11:32:16.707 +05:30 [DBG] Committed transaction.
+2024-10-18 11:32:16.710 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:32:16.710 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:32:16.712 +05:30 [DBG] Disposing transaction.
+2024-10-18 11:32:16.717 +05:30 [DBG] An entity of type 'CartLogDetail' tracked by 'LinenManagementContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:32:16.720 +05:30 [DBG] An entity of type 'CartLog' tracked by 'LinenManagementContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:32:16.725 +05:30 [DBG] SaveChanges completed for 'LinenManagementContext' with 2 entities written to the database.
+2024-10-18 11:32:18.270 +05:30 [INF] Trace: Successfully deleted CartLog with ID 11
+2024-10-18 11:32:22.894 +05:30 [INF] Successfully deleted CartLog with ID 11
+2024-10-18 11:32:25.887 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-10-18 11:32:25.896 +05:30 [INF] Executed action TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication) in 88988.7018ms
+2024-10-18 11:32:25.897 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.CartlogsController.DeleteCartLog (TDSSWebApplication)'
+2024-10-18 11:32:30.521 +05:30 [DBG] Connection id "0HN7F78LLMTSQ" completed keep alive response.
+2024-10-18 11:32:30.526 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 11:32:30.535 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:32:30.537 +05:30 [DBG] Disposed connection to database '' on server '' (2ms).
+2024-10-18 11:32:30.538 +05:30 [INF] Request finished HTTP/1.1 DELETE https://localhost:7098/api/cartlogs/11 - 204 null null 94052.3724ms
+2024-10-18 11:34:20.900 +05:30 [DBG] Connection id "0HN7F78LLMTSR" accepted.
+2024-10-18 11:34:20.902 +05:30 [DBG] Connection id "0HN7F78LLMTSR" started.
+2024-10-18 11:34:20.961 +05:30 [DBG] Connection 0HN7F78LLMTSR established using the following protocol: "Tls12"
+2024-10-18 11:34:20.996 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7098/api/Cartlogs/upsert - application/json 334
+2024-10-18 11:34:21.004 +05:30 [DBG] POST requests are not supported
+2024-10-18 11:34:21.009 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Cartlogs/upsert'
+2024-10-18 11:34:21.009 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication)' with route pattern 'api/Cartlogs/upsert' is valid for the request path '/api/Cartlogs/upsert'
+2024-10-18 11:34:21.010 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication)'
+2024-10-18 11:34:21.019 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-18 11:34:21.021 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication)'
+2024-10-18 11:34:21.060 +05:30 [INF] Route matched with {action = "UpsertCartLog", controller = "Cartlogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertCartLog(TDSSWebApplication.DTO.CartLogDto) on controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication).
+2024-10-18 11:34:21.061 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 11:34:21.061 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 11:34:21.061 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 11:34:21.061 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 11:34:21.061 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 11:34:21.061 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:34:21.074 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:34:21.077 +05:30 [DBG] Attempting to bind parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto' ...
+2024-10-18 11:34:21.082 +05:30 [DBG] Attempting to bind parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto' using the name '' in request data ...
+2024-10-18 11:34:21.093 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-10-18 11:34:21.145 +05:30 [DBG] Connection id "0HN7F78LLMTSR", Request id "0HN7F78LLMTSR:00000001": started reading request body.
+2024-10-18 11:34:21.145 +05:30 [DBG] Connection id "0HN7F78LLMTSR", Request id "0HN7F78LLMTSR:00000001": done reading request body.
+2024-10-18 11:34:21.170 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'TDSSWebApplication.DTO.CartLogDto'
+2024-10-18 11:34:21.170 +05:30 [DBG] Done attempting to bind parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto'.
+2024-10-18 11:34:21.171 +05:30 [DBG] Done attempting to bind parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto'.
+2024-10-18 11:34:21.171 +05:30 [DBG] Attempting to validate the bound parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto' ...
+2024-10-18 11:34:21.215 +05:30 [DBG] Done attempting to validate the bound parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto'.
+2024-10-18 11:34:21.218 +05:30 [INF] Upserting CartLog
+2024-10-18 11:34:21.226 +05:30 [INF] Trace: Upserting CartLog
+2024-10-18 11:34:35.570 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 11:34:35.606 +05:30 [DBG] Compiling query expression: 
+'DbSet<CartLog>()
+    .Include(cl => cl.CartLogDetails)
+    .FirstOrDefault(cl => (int?)cl.CartLogId == __cartLogDto_CartLogId_0)'
+2024-10-18 11:34:35.617 +05:30 [DBG] Including navigation: 'CartLog.CartLogDetails'.
+2024-10-18 11:34:35.677 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<CartLog>(
+    asyncEnumerable: new SingleQueryingEnumerable<CartLog>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: CartLog.CartLogId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CartLog.ActualWeight (int) Required, 1], [Property: CartLog.CartId (int) Required FK Index, 2], [Property: CartLog.Comments (string) MaxLength(2000), 3], [Property: CartLog.DateWeighed (DateTime) Required ValueGenerated.OnAdd, 4], [Property: CartLog.EmployeeId (int) Required FK Index, 5], [Property: CartLog.LocationId (int) Required FK Index, 6], [Property: CartLog.ReceiptNumber (string) MaxLength(50), 7], [Property: CartLog.ReportedWeight (int?), 8] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: CartLogDetail.CartLogDetailId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: CartLogDetail.CartLogId (int) Required FK Index, 10], [Property: CartLogDetail.Count (int) Required, 11], [Property: CartLogDetail.LinenId (int) Required FK Index, 12] }
+                3 -> 9
+            SELECT t.CartLogId, t.ActualWeight, t.CartId, t.Comments, t.DateWeighed, t.EmployeeId, t.LocationId, t.ReceiptNumber, t.ReportedWeight, c0.CartLogDetailId, c0.CartLogId, c0.Count, c0.LinenId
+            FROM 
+            (
+                SELECT TOP(1) c.CartLogId, c.ActualWeight, c.CartId, c.Comments, c.DateWeighed, c.EmployeeId, c.LocationId, c.ReceiptNumber, c.ReportedWeight
+                FROM CartLog AS c
+                WHERE c.CartLogId == @__cartLogDto_CartLogId_0
+            ) AS t
+            LEFT JOIN CartLogDetail AS c0 ON t.CartLogId == c0.CartLogId
+            ORDER BY t.CartLogId ASC), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CartLog>, 
+        TDSSWebApplication.Models.LinenManagementContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-18 11:34:35.681 +05:30 [DBG] Creating DbConnection.
+2024-10-18 11:34:35.685 +05:30 [DBG] Created DbConnection. (4ms).
+2024-10-18 11:34:35.685 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:34:35.693 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:34:35.693 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:34:35.694 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:34:35.694 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-18 11:34:35.695 +05:30 [DBG] Executing DbCommand [Parameters=[@__cartLogDto_CartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogDto_CartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:34:35.768 +05:30 [INF] Executed DbCommand (74ms) [Parameters=[@__cartLogDto_CartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogDto_CartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:34:35.769 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:34:35.769 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 0ms reading results.
+2024-10-18 11:34:35.769 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:34:35.769 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:36:25.550 +05:30 [DBG] 'LinenManagementContext' generated a temporary value for the property 'CartLog.CartLogId'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:36:25.571 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:36:25.581 +05:30 [DBG] 'LinenManagementContext' generated a temporary value for the property 'CartLogDetail.CartLogDetailId'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:36:25.585 +05:30 [DBG] The navigation 'CartLogDetail.CartLog' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:36:25.590 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLogDetail' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:36:28.142 +05:30 [DBG] SaveChanges starting for 'LinenManagementContext'.
+2024-10-18 11:36:28.143 +05:30 [DBG] DetectChanges starting for 'LinenManagementContext'.
+2024-10-18 11:36:28.143 +05:30 [DBG] DetectChanges completed for 'LinenManagementContext'.
+2024-10-18 11:36:28.214 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:36:28.214 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:36:28.214 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-10-18 11:36:28.224 +05:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-10-18 11:36:28.225 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:36:28.225 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:36:28.230 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2024-10-18 11:36:28.230 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 2000), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLog] ([ActualWeight], [CartId], [Comments], [DateWeighed], [EmployeeId], [LocationId], [ReceiptNumber], [ReportedWeight])
+OUTPUT INSERTED.[CartLogId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-10-18 11:36:28.385 +05:30 [INF] Executed DbCommand (155ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 2000), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLog] ([ActualWeight], [CartId], [Comments], [DateWeighed], [EmployeeId], [LocationId], [ReceiptNumber], [ReportedWeight])
+OUTPUT INSERTED.[CartLogId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-10-18 11:36:28.408 +05:30 [DBG] The foreign key property 'CartLog.CartLogId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:36:28.427 +05:30 [DBG] The foreign key property 'CartLogDetail.CartLogId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:36:28.433 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:36:28.433 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 48ms reading results.
+2024-10-18 11:36:28.434 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:36:28.434 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:36:28.434 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:36:28.435 +05:30 [DBG] Executing DbCommand [Parameters=[@p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLogDetail] ([CartLogId], [Count], [LinenId])
+OUTPUT INSERTED.[CartLogDetailId]
+VALUES (@p8, @p9, @p10);
+2024-10-18 11:36:28.458 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLogDetail] ([CartLogId], [Count], [LinenId])
+OUTPUT INSERTED.[CartLogDetailId]
+VALUES (@p8, @p9, @p10);
+2024-10-18 11:36:28.459 +05:30 [DBG] The foreign key property 'CartLogDetail.CartLogDetailId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:36:28.460 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:36:28.461 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 2ms reading results.
+2024-10-18 11:36:28.461 +05:30 [DBG] Committing transaction.
+2024-10-18 11:36:28.463 +05:30 [DBG] Committed transaction.
+2024-10-18 11:36:28.463 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:36:28.463 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:36:28.463 +05:30 [DBG] Disposing transaction.
+2024-10-18 11:36:28.472 +05:30 [DBG] An entity of type 'CartLog' tracked by 'LinenManagementContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:36:28.474 +05:30 [DBG] An entity of type 'CartLogDetail' tracked by 'LinenManagementContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:36:28.474 +05:30 [DBG] SaveChanges completed for 'LinenManagementContext' with 2 entities written to the database.
+2024-10-18 11:36:30.131 +05:30 [INF] Trace: Successfully upserted CartLog
+2024-10-18 11:36:35.533 +05:30 [INF] Successfully upserted CartLog
+2024-10-18 11:36:38.370 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-18 11:36:38.376 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-18 11:36:38.376 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-18 11:36:38.376 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-18 11:36:38.379 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-18 11:36:38.379 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`1[[TDSSWebApplication.DTO.CartLogDto, TDSSWebApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-18 11:36:54.997 +05:30 [INF] Executed action TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication) in 153934.991ms
+2024-10-18 11:36:54.999 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication)'
+2024-10-18 11:36:55.000 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 11:36:55.001 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:36:55.001 +05:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-10-18 11:36:55.002 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7098/api/Cartlogs/upsert - 200 null application/json; charset=utf-8 154007.4728ms
+2024-10-18 11:36:59.457 +05:30 [DBG] Connection id "0HN7F78LLMTSR" received FIN.
+2024-10-18 11:36:59.460 +05:30 [DBG] Connection id "0HN7F78LLMTSR" is closed. The last processed stream ID was 1.
+2024-10-18 11:36:59.460 +05:30 [DBG] The connection queue processing loop for 0HN7F78LLMTSR completed.
+2024-10-18 11:36:59.461 +05:30 [DBG] Connection id "0HN7F78LLMTSR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:36:59.479 +05:30 [DBG] Connection id "0HN7F78LLMTSR" stopped.
+2024-10-18 11:39:59.410 +05:30 [DBG] Connection id "0HN7F78LLMTSS" accepted.
+2024-10-18 11:39:59.413 +05:30 [DBG] Connection id "0HN7F78LLMTSS" started.
+2024-10-18 11:39:59.426 +05:30 [DBG] Connection 0HN7F78LLMTSS established using the following protocol: "Tls12"
+2024-10-18 11:39:59.438 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7098/api/Cartlogs/upsert - application/json 336
+2024-10-18 11:39:59.441 +05:30 [DBG] POST requests are not supported
+2024-10-18 11:39:59.441 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Cartlogs/upsert'
+2024-10-18 11:39:59.442 +05:30 [DBG] Endpoint 'TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication)' with route pattern 'api/Cartlogs/upsert' is valid for the request path '/api/Cartlogs/upsert'
+2024-10-18 11:39:59.442 +05:30 [DBG] Request matched endpoint 'TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication)'
+2024-10-18 11:39:59.455 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-18 11:39:59.456 +05:30 [INF] Executing endpoint 'TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication)'
+2024-10-18 11:39:59.457 +05:30 [INF] Route matched with {action = "UpsertCartLog", controller = "Cartlogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertCartLog(TDSSWebApplication.DTO.CartLogDto) on controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication).
+2024-10-18 11:39:59.458 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-18 11:39:59.458 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-18 11:39:59.459 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-18 11:39:59.459 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-18 11:39:59.459 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-18 11:39:59.459 +05:30 [DBG] Executing controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:39:59.464 +05:30 [DBG] Executed controller factory for controller TDSSWebApplication.Controllers.CartlogsController (TDSSWebApplication)
+2024-10-18 11:39:59.465 +05:30 [DBG] Attempting to bind parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto' ...
+2024-10-18 11:39:59.465 +05:30 [DBG] Attempting to bind parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto' using the name '' in request data ...
+2024-10-18 11:39:59.466 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-10-18 11:39:59.467 +05:30 [DBG] Connection id "0HN7F78LLMTSS", Request id "0HN7F78LLMTSS:00000001": started reading request body.
+2024-10-18 11:39:59.467 +05:30 [DBG] Connection id "0HN7F78LLMTSS", Request id "0HN7F78LLMTSS:00000001": done reading request body.
+2024-10-18 11:39:59.468 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'TDSSWebApplication.DTO.CartLogDto'
+2024-10-18 11:39:59.468 +05:30 [DBG] Done attempting to bind parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto'.
+2024-10-18 11:39:59.468 +05:30 [DBG] Done attempting to bind parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto'.
+2024-10-18 11:39:59.468 +05:30 [DBG] Attempting to validate the bound parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto' ...
+2024-10-18 11:39:59.470 +05:30 [DBG] Done attempting to validate the bound parameter 'cartLogDto' of type 'TDSSWebApplication.DTO.CartLogDto'.
+2024-10-18 11:39:59.470 +05:30 [INF] Upserting CartLog
+2024-10-18 11:39:59.470 +05:30 [INF] Trace: Upserting CartLog
+2024-10-18 11:40:08.577 +05:30 [DBG] Entity Framework Core 8.0.10 initialized 'LinenManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-10-18 11:40:08.759 +05:30 [DBG] Creating DbConnection.
+2024-10-18 11:40:08.759 +05:30 [DBG] Created DbConnection. (0ms).
+2024-10-18 11:40:08.759 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:08.772 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:08.772 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:40:08.772 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:40:08.772 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:40:08.772 +05:30 [DBG] Executing DbCommand [Parameters=[@__cartLogDto_CartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogDto_CartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:40:08.903 +05:30 [INF] Executed DbCommand (130ms) [Parameters=[@__cartLogDto_CartLogId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[CartLogId], [t].[ActualWeight], [t].[CartId], [t].[Comments], [t].[DateWeighed], [t].[EmployeeId], [t].[LocationId], [t].[ReceiptNumber], [t].[ReportedWeight], [c0].[CartLogDetailId], [c0].[CartLogId], [c0].[Count], [c0].[LinenId]
+FROM (
+    SELECT TOP(1) [c].[CartLogId], [c].[ActualWeight], [c].[CartId], [c].[Comments], [c].[DateWeighed], [c].[EmployeeId], [c].[LocationId], [c].[ReceiptNumber], [c].[ReportedWeight]
+    FROM [CartLog] AS [c]
+    WHERE [c].[CartLogId] = @__cartLogDto_CartLogId_0
+) AS [t]
+LEFT JOIN [CartLogDetail] AS [c0] ON [t].[CartLogId] = [c0].[CartLogId]
+ORDER BY [t].[CartLogId]
+2024-10-18 11:40:08.904 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:40:08.905 +05:30 [DBG] Context 'LinenManagementContext' started tracking 'CartLogDetail' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:40:08.906 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:08.906 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 2ms reading results.
+2024-10-18 11:40:08.906 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:08.906 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:40:37.220 +05:30 [DBG] Compiling query expression: 
+'DbSet<Linen>()
+    .Any(l => l.LinenId == __detail_LinenId_0)'
+2024-10-18 11:40:37.264 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Linen AS l
+                WHERE l.LinenId == @__detail_LinenId_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TDSSWebApplication.Models.LinenManagementContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-18 11:40:37.309 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:37.309 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:37.310 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:40:37.310 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:40:37.310 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:40:37.310 +05:30 [DBG] Executing DbCommand [Parameters=[@__detail_LinenId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Linen] AS [l]
+        WHERE [l].[LinenId] = @__detail_LinenId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-10-18 11:40:37.352 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@__detail_LinenId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Linen] AS [l]
+        WHERE [l].[LinenId] = @__detail_LinenId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-10-18 11:40:37.361 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:37.361 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 8ms reading results.
+2024-10-18 11:40:37.361 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:37.361 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:40:37.362 +05:30 [DBG] SaveChanges starting for 'LinenManagementContext'.
+2024-10-18 11:40:37.362 +05:30 [DBG] DetectChanges starting for 'LinenManagementContext'.
+2024-10-18 11:40:37.369 +05:30 [DBG] The unchanged property 'CartLog.ActualWeight' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:40:37.369 +05:30 [DBG] An entity of type 'CartLog' tracked by 'LinenManagementContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:40:37.370 +05:30 [DBG] The unchanged property 'CartLog.Comments' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:40:37.370 +05:30 [DBG] The unchanged property 'CartLog.DateWeighed' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:40:37.370 +05:30 [DBG] The unchanged property 'CartLog.ReceiptNumber' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:40:37.370 +05:30 [DBG] The unchanged property 'CartLog.ReportedWeight' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-10-18 11:40:37.370 +05:30 [DBG] DetectChanges completed for 'LinenManagementContext'.
+2024-10-18 11:40:37.382 +05:30 [DBG] Opening connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:37.383 +05:30 [DBG] Opened connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:37.383 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-18 11:40:37.383 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:40:37.383 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-10-18 11:40:37.383 +05:30 [DBG] Executing DbCommand [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 2000), @p2='?' (DbType = DateTime), @p3='?' (Size = 50), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CartLog] SET [ActualWeight] = @p0, [Comments] = @p1, [DateWeighed] = @p2, [ReceiptNumber] = @p3, [ReportedWeight] = @p4
+OUTPUT 1
+WHERE [CartLogId] = @p5;
+2024-10-18 11:40:37.474 +05:30 [INF] Executed DbCommand (90ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 2000), @p2='?' (DbType = DateTime), @p3='?' (Size = 50), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CartLog] SET [ActualWeight] = @p0, [Comments] = @p1, [DateWeighed] = @p2, [ReceiptNumber] = @p3, [ReportedWeight] = @p4
+OUTPUT 1
+WHERE [CartLogId] = @p5;
+2024-10-18 11:40:37.474 +05:30 [DBG] Closing data reader to 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:37.474 +05:30 [DBG] A data reader for 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' is being disposed after spending 0ms reading results.
+2024-10-18 11:40:37.474 +05:30 [DBG] Closing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:37.474 +05:30 [DBG] Closed connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA' (0ms).
+2024-10-18 11:40:37.475 +05:30 [DBG] An entity of type 'CartLog' tracked by 'LinenManagementContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-18 11:40:37.475 +05:30 [DBG] SaveChanges completed for 'LinenManagementContext' with 1 entities written to the database.
+2024-10-18 11:40:37.475 +05:30 [INF] Trace: Successfully upserted CartLog
+2024-10-18 11:40:37.475 +05:30 [INF] Successfully upserted CartLog
+2024-10-18 11:40:37.476 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-18 11:40:37.476 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-18 11:40:37.476 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-18 11:40:37.476 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-18 11:40:37.476 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-18 11:40:37.476 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`1[[TDSSWebApplication.DTO.CartLogDto, TDSSWebApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-18 11:40:37.478 +05:30 [INF] Executed action TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication) in 38019.0813ms
+2024-10-18 11:40:37.478 +05:30 [INF] Executed endpoint 'TDSSWebApplication.Controllers.CartlogsController.UpsertCartLog (TDSSWebApplication)'
+2024-10-18 11:40:37.478 +05:30 [DBG] 'LinenManagementContext' disposed.
+2024-10-18 11:40:37.478 +05:30 [DBG] Disposing connection to database 'LINEN_MANAGEMENT' on server 'DESKTOP-8KEV5MA'.
+2024-10-18 11:40:37.478 +05:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-10-18 11:40:37.479 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7098/api/Cartlogs/upsert - 200 null application/json; charset=utf-8 38046.1616ms
+2024-10-18 11:40:39.811 +05:30 [DBG] Connection id "0HN7F78LLMTSS" received FIN.
+2024-10-18 11:40:39.812 +05:30 [DBG] Connection id "0HN7F78LLMTSS" is closed. The last processed stream ID was 1.
+2024-10-18 11:40:39.812 +05:30 [DBG] Connection id "0HN7F78LLMTSS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-18 11:40:39.812 +05:30 [DBG] The connection queue processing loop for 0HN7F78LLMTSS completed.
+2024-10-18 11:40:39.812 +05:30 [DBG] Connection id "0HN7F78LLMTSS" stopped.

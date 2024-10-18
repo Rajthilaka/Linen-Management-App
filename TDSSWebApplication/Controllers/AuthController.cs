@@ -15,80 +15,125 @@ namespace TDSSWebApplication.Controllers
     public class AuthController : ControllerBase
     {
         private readonly LinenManagementContext _dbcontext;
-        private readonly ILogger<EmployeesController> _logger;
+        private readonly ILogger<AuthController> _logger;
         private readonly IPasswordServices _passwordServices;
-        private readonly TokenServices _tokenServices;
+        private readonly IEmployeeServices _employeeServices;
+        private readonly ITokenServices _tokenServices;
 
-        public AuthController(LinenManagementContext dbcontext, ILogger<EmployeesController> logger, IPasswordServices passwordServices, TokenServices tokenServices)
+        public AuthController(LinenManagementContext dbcontext, ILogger<AuthController> logger, IPasswordServices passwordServices, IEmployeeServices employeeServices, ITokenServices tokenServices)
         {
             _dbcontext = dbcontext;
             _logger = logger;
             _passwordServices = passwordServices;
-            _tokenServices= tokenServices;
+            _employeeServices = employeeServices;
+            _tokenServices = tokenServices;
 
         }
-        // [POST] api/auth/login
+
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginDto dto)
+        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
-            var user = await _dbcontext.Employees.FirstOrDefaultAsync(u => u.Name == dto.Name);
+            try 
+            {
+                _logger.LogInformation("Jwt token authentication login");
+                var user = await _employeeServices.GetUserByUsername(loginDto.Name);
 
-        //    var Password = await _dbcontext.Employees
-        //.Where(e => e.Name == dto.Name)
-        //.Select(e => e.Password)
-        //.FirstOrDefaultAsync();
-           
-        //    byte[] decodedPassword = Convert.FromBase64String(Password);
+            if (user == null || !_passwordServices.VerifyPassword(user.Password, loginDto.Password))
+            {
+                return Unauthorized("Invalid credentials");
+            }
 
-            //if (user == null || !_passwordServices.VerifyPassword(user, dto.Password))
-            //    return Unauthorized("Invalid credentials");
+            var jwtToken = _tokenServices.CreateJwtToken(user);
+            var refreshToken = _tokenServices.CreateRefreshToken();
 
-            var token = _tokenServices.GenerateJwtToken(user);
-            var refreshToken = _tokenServices.GenerateRefreshToken();
+            // Store refresh token with user
+            await _employeeServices.SaveRefreshToken(user.EmployeeId, refreshToken);
 
-            user.RefreshToken = refreshToken;
-            //user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            return Ok(new { Token = jwtToken, RefreshToken = refreshToken });
 
-            await _dbcontext.SaveChangesAsync();
-
-            return Ok(new { Token = token, RefreshToken = refreshToken });
+            }
+            catch (ArgumentNullException ex)
+            {
+                _logger.LogInformation(ex, "Login - invalid credentials");
+                return BadRequest("A required parameter was null.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation(ex, "Login Error");
+                return StatusCode(500, "Oops! Something went wrong, please call support.");
+            }
         }
 
-        // [POST] api/auth/logout
+
         [HttpPost("logout")]
         public async Task<IActionResult> Logout()
         {
-            var user = await _dbcontext.Employees.FindAsync(User.FindFirstValue(ClaimTypes.NameIdentifier));
-            if (user == null)
-                return Unauthorized();
+            try
+            {
+                _logger.LogInformation("Jwt Authentication Logout");
+                var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
 
-            user.RefreshToken = null;
-            await _dbcontext.SaveChangesAsync();
+                if (userId == null)
+                {                   
+                    return Unauthorized();
+                }
 
-            return Ok("User logged out successfully");
+                if (!int.TryParse(userId, out int employeeId))
+                {
+                    return BadRequest("Invalid user ID format.");
+                }
+                // Remove refresh token
+                await _employeeServices.RemoveRefreshToken(employeeId);
+                return Ok();
+            }
+            catch (ArgumentNullException ex)
+            {
+                _logger.LogInformation(ex, "Logout Error");
+
+                return BadRequest("A required parameter was null.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation(ex, "Logout Error");
+                return StatusCode(500, "Oops! Something went wrong, please call support.");
+            }
+
         }
 
-        // [POST] api/auth/refresh
         [HttpPost("refresh")]
-        public async Task<IActionResult> Refresh([FromBody] TokenRefreshDto dto)
+        public async Task<IActionResult> Refresh([FromBody] TokenRefreshDto tokenRefreshDto)
         {
-            var principal = _tokenServices.GetPrincipalFromExpiredToken(dto.Token);
-            var userId = principal.FindFirstValue(ClaimTypes.NameIdentifier);
+            try
+            {
+                _logger.LogInformation("Jwt Athentication TokenRefreh");
+                var user = await _employeeServices.GetUserByRefreshToken(tokenRefreshDto.RefreshToken);
 
-            var user = await _dbcontext.Employees.FirstOrDefaultAsync(u => u.EmployeeId == int.Parse(userId));
-            //if (user == null || user.RefreshToken != dto.RefreshToken || user.RefreshTokenExpiryTime <= DateTime.UtcNow)
-            if (user == null || user.RefreshToken != dto.RefreshToken)
-                return Unauthorized("Invalid refresh token");
+                if (user == null)
+                {
+                    return Unauthorized();
+                }
 
-            var newToken = _tokenServices.GenerateJwtToken(user);
-            var newRefreshToken = _tokenServices.GenerateRefreshToken();
+                var jwtToken = _tokenServices.CreateJwtToken(user);
+                var newRefreshToken = _tokenServices.CreateRefreshToken();
 
-            user.RefreshToken = newRefreshToken;
-          //  user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+                // Update refresh token
+                await _employeeServices.SaveRefreshToken(user.EmployeeId, newRefreshToken);
 
-            await _dbcontext.SaveChangesAsync();
+                return Ok(new { Token = jwtToken, RefreshToken = newRefreshToken });
+            }
+            catch (ArgumentNullException ex)
+            {
+                _logger.LogInformation(ex, "RefreshToken Error");
+                return BadRequest("A required parameter was null.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation(ex, "RefreshToken Error");
+                return StatusCode(500, "Oops! Something went wrong, please call support.");
+            }
 
-            return Ok(new { Token = newToken, RefreshToken = newRefreshToken });
         }
+
+      
     }
 }

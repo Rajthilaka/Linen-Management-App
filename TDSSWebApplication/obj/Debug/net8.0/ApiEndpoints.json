@@ -8,7 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
+        "Name": "loginDto",
         "Type": "TDSSWebApplication.DTO.LoginDto",
         "IsRequired": true
       }
@@ -34,7 +34,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
+        "Name": "tokenRefreshDto",
         "Type": "TDSSWebApplication.DTO.TokenRefreshDto",
         "IsRequired": true
       }

@@ -346,3 +346,4 @@ C:\Users\HP\source\repos\TDSSWebApplication\UnitTestProject\obj\Debug\net8.0\ref
 C:\Users\HP\source\repos\TDSSWebApplication\UnitTestProject\obj\Debug\net8.0\UnitTestProject.pdb
 C:\Users\HP\source\repos\TDSSWebApplication\UnitTestProject\obj\Debug\net8.0\UnitTestProject.genruntimeconfig.cache
 C:\Users\HP\source\repos\TDSSWebApplication\UnitTestProject\obj\Debug\net8.0\ref\UnitTestProject.dll
+C:\Users\HP\source\repos\TDSSWebApplication\UnitTestProject\obj\Debug\net8.0\UnitTestProject.sourcelink.json

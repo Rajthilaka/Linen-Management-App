@@ -1,0 +1,505 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\services\\passwordservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\services\\passwordservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\services\\employeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\services\\employeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\services\\cartlogservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\services\\cartlogservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\ioc\\servicemoduleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\ioc\\servicemoduleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\controllers\\cartlogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\controllers\\cartlogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\common\\globalerrorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\common\\globalerrorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\common\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\common\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\dto\\cartlogdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\dto\\cartlogdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\dto\\cartlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\dto\\cartlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\models\\linenmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\models\\linenmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\iservices\\iemployeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\iservices\\iemployeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\dto\\tokenrefreshdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\dto\\tokenrefreshdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\iservices\\itokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\iservices\\itokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\iservices\\ipasswordservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\iservices\\ipasswordservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\models\\cartlogdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\models\\cartlogdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\models\\cartlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\models\\cartlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\iservices\\icartlogservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\iservices\\icartlogservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\models\\linen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\models\\linen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|c:\\users\\hp\\source\\repos\\tdsswebapplication\\tdsswebapplication\\tdsswebapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D9316C61-5215-4EEF-A496-9C254D162F17}|TDSSWebApplication\\TDSSWebApplication.csproj|solutionrelative:tdsswebapplication\\tdsswebapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TDSSWebApplication\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServiceModuleExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IOC\\ServiceModuleExtensions.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\IOC\\ServiceModuleExtensions.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IOC\\ServiceModuleExtensions.cs",
+              "RelativeToolTip": "TDSSWebApplication\\IOC\\ServiceModuleExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:01:29.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Services\\EmployeeServices.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Services\\EmployeeServices.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Services\\EmployeeServices.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Services\\EmployeeServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T09:57:24.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PasswordServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Services\\PasswordServices.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Services\\PasswordServices.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Services\\PasswordServices.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Services\\PasswordServices.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T17:43:21.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Services\\TokenServices.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Services\\TokenServices.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Services\\TokenServices.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Services\\TokenServices.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvyQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:19:34.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\appsettings.json",
+              "RelativeToolTip": "TDSSWebApplication\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-12T11:09:15.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Program.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Program.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Program.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAiwGEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:11:58.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T02:08:27.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartlogServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Services\\CartlogServices.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Services\\CartlogServices.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Services\\CartlogServices.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Services\\CartlogServices.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAAFYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T00:13:08.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CartlogsController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Controllers\\CartlogsController.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Controllers\\CartlogsController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Controllers\\CartlogsController.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Controllers\\CartlogsController.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAAAJUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T14:00:26.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAFYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:30:32.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GlobalErrorHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Common\\GlobalErrorHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Common\\GlobalErrorHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Common\\GlobalErrorHandlerMiddleware.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Common\\GlobalErrorHandlerMiddleware.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T16:58:34.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Global.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Common\\Global.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Common\\Global.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Common\\Global.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Common\\Global.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:53:42.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CartLogDetailDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\CartLogDetailDto.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\DTO\\CartLogDetailDto.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\CartLogDetailDto.cs",
+              "RelativeToolTip": "TDSSWebApplication\\DTO\\CartLogDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:07:28.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartLogDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\CartLogDto.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\DTO\\CartLogDto.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\CartLogDto.cs",
+              "RelativeToolTip": "TDSSWebApplication\\DTO\\CartLogDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:06:43.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LinenManagementContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\LinenManagementContext.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Models\\LinenManagementContext.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\LinenManagementContext.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Models\\LinenManagementContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowBUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T07:10:05.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\LoginDto.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\DTO\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\LoginDto.cs",
+              "RelativeToolTip": "TDSSWebApplication\\DTO\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:40:17.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TokenRefreshDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\TokenRefreshDto.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\DTO\\TokenRefreshDto.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\TokenRefreshDto.cs",
+              "RelativeToolTip": "TDSSWebApplication\\DTO\\TokenRefreshDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:42:10.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IEmployeeServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IServices\\IEmployeeServices.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\IServices\\IEmployeeServices.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IServices\\IEmployeeServices.cs",
+              "RelativeToolTip": "TDSSWebApplication\\IServices\\IEmployeeServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:40:01.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IPasswordServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IServices\\IPasswordServices.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\IServices\\IPasswordServices.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IServices\\IPasswordServices.cs",
+              "RelativeToolTip": "TDSSWebApplication\\IServices\\IPasswordServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T05:25:19.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ITokenServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IServices\\ITokenServices.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\IServices\\ITokenServices.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IServices\\ITokenServices.cs",
+              "RelativeToolTip": "TDSSWebApplication\\IServices\\ITokenServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:03:36.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\Employee.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T16:41:25.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CartLogDetail.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\CartLogDetail.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Models\\CartLogDetail.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\CartLogDetail.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Models\\CartLogDetail.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T10:57:49.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ICartlogServices.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IServices\\ICartlogServices.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\IServices\\ICartlogServices.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\IServices\\ICartlogServices.cs",
+              "RelativeToolTip": "TDSSWebApplication\\IServices\\ICartlogServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T00:12:04.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CartLog.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\CartLog.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Models\\CartLog.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\CartLog.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Models\\CartLog.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA9wC4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T00:08:04.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\Cart.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T10:43:04.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Linen.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\Linen.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Models\\Linen.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\Linen.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Models\\Linen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T02:57:08.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Location.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\Location.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Models\\Location.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Models\\Location.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Models\\Location.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:04:08.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\DTO\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\DTO\\RegisterDto.cs",
+              "RelativeToolTip": "TDSSWebApplication\\DTO\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:36:18.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TDSSWebApplication.csproj",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\TDSSWebApplication.csproj",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\TDSSWebApplication.csproj",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\TDSSWebApplication.csproj",
+              "RelativeToolTip": "TDSSWebApplication\\TDSSWebApplication.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-12T07:08:41.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Startup.cs",
+              "RelativeDocumentMoniker": "TDSSWebApplication\\Startup.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\TDSSWebApplication\\TDSSWebApplication\\Startup.cs",
+              "RelativeToolTip": "TDSSWebApplication\\Startup.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBAAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:58:29.33Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

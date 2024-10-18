@@ -20,16 +20,15 @@ namespace TDSSWebApplication.Common
         {
             try
             {
-                // Pass request to the next middleware in the pipeline
                 await _next(context);
             }
             catch (Exception ex)
             {
-                // Log the exception
-                _logger.LogError(ex, "An unhandled exception occurred.");
+                // Log the exception here
+                _logger.LogError(ex, "An unhandled exception has occurred.");
 
-                // Handle the error and return a generic 500 error message
-                await HandleExceptionAsync(context);
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync("Oops! Something went wrong, please call support.");
             }
         }
 

@@ -5,6 +5,7 @@ using TDSSWebApplication.IServices;
 using TDSSWebApplication.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
+using System.Security.Claims;
 
 namespace TDSSWebApplication.Controllers
 {
@@ -174,9 +175,18 @@ namespace TDSSWebApplication.Controllers
             _logger.LogInformation("Attempting to delete CartLog with ID {CartLogId}", cartLogId);
             try
             {
-                // Retrieve the employee ID from the JWT token
-               // int employeeId = int.Parse(User.FindFirst("id").Value);
-                await _cartlogServices.DeleteCartLogAsync(cartLogId, 2); // Assuming 2 is employeeId
+                
+                var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+
+                if (userId == null)
+                {
+                    return Unauthorized();
+                }
+                if (!int.TryParse(userId, out int employeeId))
+                {
+                    return BadRequest("Invalid user ID format.");
+                }
+                await _cartlogServices.DeleteCartLogAsync(cartLogId, employeeId); 
                 _logger.LogInformation("Successfully deleted CartLog with ID {CartLogId}", cartLogId);
                 return NoContent();
             }

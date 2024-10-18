@@ -28,25 +28,27 @@ namespace TDSSWebApplication.Controllers
             _employeeServices = employeeServices;
 
         }
-        //// Call IEmployeeServices in Register method
-        //[HttpPost("register")]
-        //public async Task<IActionResult> Register([FromBody] RegisterDto dto)
-        //{
-        //    var user = await _employeeServices.RegisterUserAsync(dto);
-
-        //    if (user == null)
-        //    {
-        //        return BadRequest("User registration failed");
-        //    }
-
-        //    return Ok("User registered successfully");
-        //}
+       
 
         [HttpPost("SetPassword")]
         public async Task<IActionResult> SetPassword(int employeeId, string password)
         {
-            await _employeeServices.GenerateAndSetPasswordAsync(employeeId, password);
-            return Ok("Password updated successfully");
+            try
+            {
+                await _employeeServices.GenerateAndSetPasswordAsync(employeeId, password);
+                _logger.LogInformation("Successfully Set the Password");
+                return Ok("Password updated successfully");
+            }
+            catch (KeyNotFoundException ex)
+            {
+                _logger.LogWarning(ex, "employee with ID {employeeId} not found", employeeId);
+                return NotFound(new { message = ex.Message });
+            }           
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error employee with ID {employeeId} not found", employeeId);
+                return StatusCode(500, "Internal server error occurred.");
+            }
         }
     }
 }

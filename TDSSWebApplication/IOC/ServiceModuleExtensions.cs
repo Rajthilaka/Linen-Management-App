@@ -10,7 +10,7 @@ namespace TDSSWebApplication.IOC
         {
             services.AddScoped<IPasswordServices, PasswordServices>();
            
-            services.AddScoped<TokenServices>();
+            services.AddScoped<ITokenServices, TokenServices>();
             services.AddScoped<IEmployeeServices, EmployeeServices>();
             services.AddScoped<ICartlogServices, CartlogServices>();
 

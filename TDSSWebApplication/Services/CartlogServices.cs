@@ -115,26 +115,7 @@ namespace TDSSWebApplication.Services
                         {
                             throw new Exception($"Linen with ID {detail.LinenId} does not exist.");
                         }
-                    }
-                    //foreach (var detailDto in cartLogDto.Linen)
-                    //{
-                    //    var existingDetail = existingCartLog.CartLogDetails
-                    //        .FirstOrDefault(d => d.CartLogDetailId == detailDto.CartLogDetailId);
-
-                    //    if (existingDetail != null)
-                    //    {
-                    //        existingDetail.LinenId = detailDto.LinenId;
-                    //        existingDetail.Count = detailDto.Count;
-                    //    }
-                    //    else
-                    //    {
-                    //        existingCartLog.CartLogDetails.Add(new CartLogDetail
-                    //        {
-                    //            LinenId = detailDto.LinenId,
-                    //            Count = detailDto.Count
-                    //        });
-                    //    }
-                    //}
+                    }                   
                 }
                 else
                 {

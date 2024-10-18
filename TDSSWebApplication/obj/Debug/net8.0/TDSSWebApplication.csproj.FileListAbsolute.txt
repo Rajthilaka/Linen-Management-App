@@ -267,3 +267,4 @@ C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\obj\Debug\net8.0\
 C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\obj\Debug\net8.0\TDSSWebApplication.pdb
 C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\obj\Debug\net8.0\TDSSWebApplication.genruntimeconfig.cache
 C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\obj\Debug\net8.0\ref\TDSSWebApplication.dll
+C:\Users\HP\source\repos\TDSSWebApplication\TDSSWebApplication\obj\Debug\net8.0\TDSSWebApplication.sourcelink.json

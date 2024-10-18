@@ -33,7 +33,7 @@ builder.Services.AddAuthentication(options =>
 })
 .AddJwtBearer(options =>
 {
-    var secretKey = builder.Configuration["Jwt:Secret"];
+    var secretKey = builder.Configuration["Jwt:Key"];
     var validissuer = builder.Configuration["Jwt:Issuer"];
     var validaudience = builder.Configuration["Jwt:Audience"];
 
@@ -57,12 +57,12 @@ builder.Services.AddAuthentication(options =>
 });
 
 
-builder.Services.AddAuthorization(); // Ensure this is added for the policies to work
+builder.Services.AddAuthorization(); 
 // Add Services
 builder.Services.RegisterServices();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

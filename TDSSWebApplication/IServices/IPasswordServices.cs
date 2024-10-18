@@ -4,6 +4,6 @@ namespace TDSSWebApplication.IServices
 {
     public interface IPasswordServices
     {
-        bool VerifyPassword(Employee user, string password);
+        bool VerifyPassword(string hashedPassword, string providedPassword);
     }
 }
